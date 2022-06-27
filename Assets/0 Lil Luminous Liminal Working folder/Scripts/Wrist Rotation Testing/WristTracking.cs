@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WristRotation : MonoBehaviour
+public class WristTracking : MonoBehaviour
 {
     public Transform hand;
     public int frames = 10;
