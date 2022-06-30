@@ -17,9 +17,9 @@ public class FloatRock : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //floatHieght = 1 + (getValue.thoughtfullness / 100);
+        floatHieght = 1 + (getValue.thoughtfullness / 100);
 
-        //transform.position = new Vector3(transform.position.x, floatHieght, transform.position.z);
-        //Debug.Log(floatHieght);
+        transform.position = new Vector3(transform.position.x, floatHieght, transform.position.z);
+        Debug.Log(floatHieght);
     }
 }

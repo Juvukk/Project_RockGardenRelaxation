@@ -3168,12 +3168,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a64cd444a9a7040a0a2e41ae30bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFollowingMovement: 0
-  startCounter: 0
-  counter: 0.5
-  swril: {fileID: 334832320}
+  TriggerPulled: 0
+  breathingIN: 1
+  inBreathcounter: 3
+  outBreathcounter: 7
   thoughtfullness: 0
   thoughtfullnessChange: 20
+  triggerReleaseThreshold: 0
 --- !u!54 &267749963
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3983,7 +3984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1051449475
 MonoBehaviour:
   m_ObjectHideFlags: 0
