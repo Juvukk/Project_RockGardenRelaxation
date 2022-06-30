@@ -350,26 +350,6 @@ CapsuleCollider:
   m_Height: 0.06
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0.01}
---- !u!114 &267749962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267749959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a64cd444a9a7040a0a2e41ae30bb45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerPulled: 0
-  breathingIN: 1
-  inBreathcounter: 3
-  outBreathcounter: 7
-  debugtext: {fileID: 0}
-  thoughtfullness: 0
-  thoughtfullnessChange: 20
-  triggerReleaseThreshold: 0
 --- !u!54 &267749963
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -548,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898ee6b97962b6e499d8b939ef4c9e7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 267749962}
+  getValue: {fileID: 147485129}
   floatHieght: 1
 --- !u!1 &320456078
 GameObject:
