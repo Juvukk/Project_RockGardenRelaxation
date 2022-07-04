@@ -9,12 +9,14 @@ public class InputTracker : MonoBehaviour
     [SerializeField] private bool breathingIN = true;
     [SerializeField] private float inBreathcounter = 3;
     [SerializeField] private float outBreathcounter = 7;
+    private float buffer = 0.3f;
     private float resetIN;
     private float resetOut;
     [SerializeField] private Text debugtext;
 
     public float thoughtfullness = 0;
-    public float thoughtfullnessChange;
+    public float lowerThoughtMulitplier;
+    public float raiseThoughtMulitplier;
 
     [SerializeField] private float triggerReleaseThreshold;
 
@@ -87,7 +89,7 @@ public class InputTracker : MonoBehaviour
     {
         if (thoughtfullness > 0)
         {
-            thoughtfullness -= thoughtfullnessChange * Time.deltaTime;
+            thoughtfullness -= lowerThoughtMulitplier * Time.deltaTime;
         }
     }
 
@@ -95,23 +97,33 @@ public class InputTracker : MonoBehaviour
     {
         if (thoughtfullness < 100)
         {
-            thoughtfullness += thoughtfullnessChange * Time.deltaTime;
+            thoughtfullness += raiseThoughtMulitplier * Time.deltaTime;
+        }
+        else
+        {
+            EventManager.audioEvent?.Invoke(0, 3);
         }
     }
 
     public void DetermineMovementFollowed()
     {
+        buffer -= Time.deltaTime;
+
         if (breathingIN && TriggerPulled)
         {
             IncreaseThoughtfullness();
+            EventManager.audioEvent?.Invoke(0, 0);
         }
         else if (!breathingIN && !TriggerPulled)
         {
             IncreaseThoughtfullness();
+            EventManager.audioEvent?.Invoke(0, 0);
         }
-        else
+        else if (buffer <= 0)
         {
             DecreaseThoughtfullness();
+            EventManager.audioEvent?.Invoke(0, 1);
         }
+        buffer = 0.3f;
     }
 }
