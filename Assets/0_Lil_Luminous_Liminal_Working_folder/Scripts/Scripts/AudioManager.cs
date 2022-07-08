@@ -4,24 +4,36 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource[] AudioSources;
-    [SerializeField] private AudioClip[] AudioClips;
+    [SerializeField] private AudioSource[] audioSources;
+    [SerializeField] private AudioClip[] SfxClips;
+    [SerializeField] private AudioClip[] voiceLines;
+    [SerializeField] private AudioSource voSource;
 
     private void OnEnable()
     {
-        EventManager.audioEvent += playSfx;
+        EventManager.sfxEvent += playSfx;
+        EventManager.voEvent += playVoiceLines;
     }
 
     private void OnDisable()
     {
-        EventManager.audioEvent -= playSfx;
+        EventManager.sfxEvent -= playSfx;
+        EventManager.voEvent -= playVoiceLines;
+    }
+
+    public void playVoiceLines(int clipIndex)
+    {
+        if (voSource != null && !voSource.isPlaying)
+        {
+            voSource.PlayOneShot(voiceLines[clipIndex]);
+        }
     }
 
     public void playSfx(int clipIndex, int SourceIndex)
     {
-        if (!AudioSources[SourceIndex].isPlaying)
+        if (!audioSources[SourceIndex].isPlaying)
         {
-            AudioSources[SourceIndex].PlayOneShot(AudioClips[clipIndex]);
+            audioSources[SourceIndex].PlayOneShot(SfxClips[clipIndex]);
         }
     }
 }

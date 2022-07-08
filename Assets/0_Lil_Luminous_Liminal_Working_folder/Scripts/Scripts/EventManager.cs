@@ -8,7 +8,11 @@ public class EventManager : MonoBehaviour
 
     public static LoadScene sceneLoad;
 
-    public delegate void AudioEvent(int ClipIndex, int SourceIndex);
+    public delegate void SFXEvent(int ClipIndex, int SourceIndex);
 
-    public static AudioEvent audioEvent;
+    public static SFXEvent sfxEvent;
+
+    public delegate void VOEvent(int ClipIndex);
+
+    public static VOEvent voEvent;
 }

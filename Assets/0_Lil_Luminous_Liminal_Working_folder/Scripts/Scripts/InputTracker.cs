@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class InputTracker : MonoBehaviour
 {
-    [SerializeField] private bool TriggerPulled;
+    [SerializeField] public bool TriggerPulled;
     [SerializeField] private bool breathingIN = true;
     [SerializeField] private float inBreathcounter = 3;
     [SerializeField] private float outBreathcounter = 7;
@@ -101,7 +101,6 @@ public class InputTracker : MonoBehaviour
         }
         else
         {
-            EventManager.audioEvent?.Invoke(0, 3);
         }
     }
 
@@ -112,17 +111,14 @@ public class InputTracker : MonoBehaviour
         if (breathingIN && TriggerPulled)
         {
             IncreaseThoughtfullness();
-            EventManager.audioEvent?.Invoke(0, 0);
         }
         else if (!breathingIN && !TriggerPulled)
         {
             IncreaseThoughtfullness();
-            EventManager.audioEvent?.Invoke(0, 0);
         }
         else if (buffer <= 0)
         {
             DecreaseThoughtfullness();
-            EventManager.audioEvent?.Invoke(0, 1);
         }
         buffer = 0.3f;
     }
