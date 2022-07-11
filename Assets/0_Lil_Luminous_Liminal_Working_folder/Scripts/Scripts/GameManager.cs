@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int stateNumber = 0;
     [SerializeField] private float[] durationOfSection;
     [SerializeField] private bool stateHasRun = false;
+    [SerializeField] private bool experienceBegun = false;
 
     public enum GameState
     {
@@ -22,24 +23,28 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        //experienceSection = GameState.Start;
-        experienceSection = GameState.Welcome;
+        experienceSection = GameState.Start;
+        // experienceSection = GameState.Welcome;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        //if (experienceSection == GameState.Start)
-        //{
-        //    State();
-        //    if (getInput.TriggerPulled == true && stateHasRun == false)
-        //    {
-        //        stateHasRun = true;
-        //        experienceSection = GameState.Welcome;
-        //    }
-        //}
-        //else
-        if (!stateHasRun)
+        RunExperience();
+    }
+
+    public void RunExperience()
+    {
+        if (experienceSection == GameState.Start)
+        {
+            if (getInput.TriggerPulled == true && experienceBegun == false)
+            {
+                experienceBegun = true;
+                experienceSection = GameState.Welcome;
+                State();
+            }
+        }
+        else if (!stateHasRun)
         {
             stateHasRun = true;
             State();
@@ -57,7 +62,7 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.Welcome:
-
+                Debug.LogError("welcomeShould be running");
                 stateHandler(((int)GameState.Welcome));//
                 StartCoroutine(changeState(((int)GameState.Welcome)));
 
@@ -213,7 +218,7 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator changeState(int state)
     {
-        Debug.Log("Change State");
+        // Debug.Log("Change State");
         yield return new WaitForSeconds(durationOfSection[state]);
         stateNumber++;
         experienceSection = GameState.Start + stateNumber;
