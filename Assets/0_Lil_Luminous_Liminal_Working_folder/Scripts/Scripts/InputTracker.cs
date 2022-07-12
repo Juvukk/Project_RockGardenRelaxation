@@ -39,8 +39,9 @@ public class InputTracker : MonoBehaviour
     {
         if (breathingIN)
         {
-            debugtext.text = "pull trigger in";
+            Debug.Log("pull trigger in");
             inBreathcounter -= Time.deltaTime;
+            //IncreaseThoughtfullness();
         }
         if (inBreathcounter <= 0)
         {
@@ -50,8 +51,9 @@ public class InputTracker : MonoBehaviour
 
         if (!breathingIN)
         {
-            debugtext.text = "release Trigger";
+            Debug.Log("release trigger ");
             outBreathcounter -= Time.deltaTime;
+            DecreaseThoughtfullness();
         }
         if (outBreathcounter <= 0)
         {
@@ -62,25 +64,14 @@ public class InputTracker : MonoBehaviour
 
     private void GetTriggerInteraction()
     {
-        if (Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger") > 0) // left hand
+        if (Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger") > 0 || (Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger") > 0))
         {
-            Debug.Log("Trigger pulled L");
+            //Debug.Log("Trigger pulled");
             TriggerPulled = true;
         }
-        else if (Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger") < triggerReleaseThreshold)
+        else if (Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger") < triggerReleaseThreshold || (Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger") < triggerReleaseThreshold))
         {
-            Debug.Log("Trigger released L");
-            TriggerPulled = false;
-        }
-
-        if (Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger") > 0) // right hand
-        {
-            Debug.Log("Trigger pulled R");
-            TriggerPulled = true;
-        }
-        else if (Input.GetAxis("Oculus_CrossPlatform_SecondaryIndexTrigger") < triggerReleaseThreshold)
-        {
-            Debug.Log("Trigger released R");
+            // Debug.Log("Trigger released L");
             TriggerPulled = false;
         }
     }
@@ -106,20 +97,18 @@ public class InputTracker : MonoBehaviour
 
     public void DetermineMovementFollowed()
     {
-        buffer -= Time.deltaTime;
-
+        //buffer -= Time.deltaTime;
+        //if (buffer <= 0)
+        //{
         if (breathingIN && TriggerPulled)
         {
             IncreaseThoughtfullness();
         }
         else if (!breathingIN && !TriggerPulled)
         {
-            IncreaseThoughtfullness();
-        }
-        else if (buffer <= 0)
-        {
             DecreaseThoughtfullness();
         }
+
         buffer = 0.3f;
     }
 }
