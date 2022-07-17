@@ -14,7 +14,9 @@ public class GameManager : MonoBehaviour
 
     public enum GameState
     {
-        Start, Welcome, Begin, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven,
+        //Start,
+        Welcome, Begin, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven,
+
         Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Seventeen, Eighteen, Nineteen, Twenty, TwentyOne, TwentyTwo, End
     }
 
@@ -23,8 +25,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        experienceSection = GameState.Start;
-        // experienceSection = GameState.Welcome;
+        // experienceSection = GameState.Start;
+        experienceSection = GameState.Welcome;
     }
 
     // Update is called once per frame
@@ -35,16 +37,17 @@ public class GameManager : MonoBehaviour
 
     public void RunExperience()
     {
-        if (experienceSection == GameState.Start)
-        {
-            if (getInput.TriggerPulled == true && experienceBegun == false)
-            {
-                experienceBegun = true;
-                experienceSection = GameState.Welcome;
-                State();
-            }
-        }
-        else if (!stateHasRun)
+        //if (experienceSection == GameState.Start)
+        //{
+        //    if (getInput.TriggerPulled == true && experienceBegun == false)
+        //    {
+        //        experienceBegun = true;
+        //        experienceSection = GameState.Welcome;
+        //        State();
+        //    }
+        //}
+        //else
+        if (!stateHasRun)
         {
             stateHasRun = true;
             State();
@@ -55,11 +58,11 @@ public class GameManager : MonoBehaviour
     {
         switch (experienceSection)
         {
-            case GameState.Start:
+            //case GameState.Start:
 
-                stateHandler(((int)GameState.Start));//
+            //    stateHandler(((int)GameState.Start));//
 
-                break;
+            //    break;
 
             case GameState.Welcome:
                 Debug.LogError("welcomeShould be running");
@@ -221,7 +224,7 @@ public class GameManager : MonoBehaviour
         // Debug.Log("Change State");
         yield return new WaitForSeconds(durationOfSection[state]);
         stateNumber++;
-        experienceSection = GameState.Start + stateNumber;
+        experienceSection = GameState.Welcome + stateNumber;
         stateHasRun = false;
         yield return null;
     }

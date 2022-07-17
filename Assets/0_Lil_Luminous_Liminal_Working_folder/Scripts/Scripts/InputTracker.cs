@@ -31,7 +31,7 @@ public class InputTracker : MonoBehaviour
     private void Update()
     {
         timer();
-        GetTriggerInteraction();
+        //   GetTriggerInteraction();
         DetermineMovementFollowed();
     }
 
@@ -41,7 +41,7 @@ public class InputTracker : MonoBehaviour
         {
             Debug.Log("pull trigger in");
             inBreathcounter -= Time.deltaTime;
-            //IncreaseThoughtfullness();
+            IncreaseThoughtfullness();
         }
         if (inBreathcounter <= 0)
         {
