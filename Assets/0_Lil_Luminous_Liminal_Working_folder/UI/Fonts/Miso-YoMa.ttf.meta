@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 8ef002d536784b74392be701da494329
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Miso
+  fontNames:
+  - Miso
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 40bb01d073e853f46a5364052ef2f561, type: 3}
+  - {fileID: 12800000, guid: 34670dd22ffe4d14d902c663972cbb22, type: 3}
+  - {fileID: 12800000, guid: 4fc1addd6ee98334ba84fef7347860aa, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
