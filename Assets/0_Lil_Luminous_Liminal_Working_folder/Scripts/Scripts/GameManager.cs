@@ -14,10 +14,11 @@ public class GameManager : MonoBehaviour
 
     public enum GameState
     {
-        //Start,
-        Welcome, Begin, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven,
+        //We can Rename these to help identify each section.
+        Welcome, Begin, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve,
 
-        Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Seventeen, Eighteen, Nineteen, Twenty, TwentyOne, TwentyTwo, End
+        Thirteen, Fourteen, Fifthteen, Sixteen, Seventeen, Eightteen, Nineteen, Twenty, TwentyOne,
+        TwentyTwo, TwentyThree, TwentyFour, TwentyFive, TwentySix, TwentySeven, End
     }
 
     public GameState experienceSection;
@@ -25,11 +26,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        // experienceSection = GameState.Start;
-        experienceSection = GameState.Welcome;
+        experienceSection = GameState.Welcome; // set the state to be welcome, this can be commented out to test other states.
     }
 
-    // Update is called once per frame
     private void Update()
     {
         RunExperience();
@@ -37,36 +36,21 @@ public class GameManager : MonoBehaviour
 
     public void RunExperience()
     {
-        //if (experienceSection == GameState.Start)
-        //{
-        //    if (getInput.TriggerPulled == true && experienceBegun == false)
-        //    {
-        //        experienceBegun = true;
-        //        experienceSection = GameState.Welcome;
-        //        State();
-        //    }
-        //}
-        //else
-        if (!stateHasRun)
+        if (!stateHasRun) // make sure the section only runs once.
         {
             stateHasRun = true;
             State();
         }
     }
 
-    public void State()
+    public void State() // check what state we are in
     {
         switch (experienceSection)
         {
-            //case GameState.Start:
+            // each "state" is an int so we pass that number to state handler and the change state.
+            case GameState.Welcome: // if you hover you mouse over "welcome" you'll see that it = 0
 
-            //    stateHandler(((int)GameState.Start));//
-
-            //    break;
-
-            case GameState.Welcome:
-                Debug.LogError("welcomeShould be running");
-                stateHandler(((int)GameState.Welcome));//
+                stateHandler(((int)GameState.Welcome));
                 StartCoroutine(changeState(((int)GameState.Welcome)));
 
                 break;
@@ -78,37 +62,30 @@ public class GameManager : MonoBehaviour
 
                 break;
 
-            case GameState.One:
-
-                stateHandler(((int)GameState.One));//
-                StartCoroutine(changeState(((int)GameState.One)));
-
-                break;
-
             case GameState.Two:
 
                 stateHandler(((int)GameState.Two));//
                 StartCoroutine(changeState(((int)GameState.Two)));
+
                 break;
 
             case GameState.Three:
 
-                stateHandler(((int)GameState.Three));
+                stateHandler(((int)GameState.Three));//
                 StartCoroutine(changeState(((int)GameState.Three)));
-
                 break;
 
             case GameState.Four:
 
-                stateHandler(((int)GameState.Four));//
+                stateHandler(((int)GameState.Four));
                 StartCoroutine(changeState(((int)GameState.Four)));
+
                 break;
 
             case GameState.Five:
 
                 stateHandler(((int)GameState.Five));//
                 StartCoroutine(changeState(((int)GameState.Five)));
-
                 break;
 
             case GameState.Six:
@@ -122,19 +99,20 @@ public class GameManager : MonoBehaviour
 
                 stateHandler(((int)GameState.Seven));//
                 StartCoroutine(changeState(((int)GameState.Seven)));
+
                 break;
 
             case GameState.Eight:
 
-                stateHandler(((int)GameState.Eight)); //
+                stateHandler(((int)GameState.Eight));//
                 StartCoroutine(changeState(((int)GameState.Eight)));
-
                 break;
 
             case GameState.Nine:
 
                 stateHandler(((int)GameState.Nine)); //
                 StartCoroutine(changeState(((int)GameState.Nine)));
+
                 break;
 
             case GameState.Ten:
@@ -146,71 +124,104 @@ public class GameManager : MonoBehaviour
             case GameState.Eleven:
 
                 stateHandler(((int)GameState.Eleven)); //
-
+                StartCoroutine(changeState(((int)GameState.Eleven)));
                 break;
 
             case GameState.Twelve:
 
                 stateHandler(((int)GameState.Twelve)); //
+                StartCoroutine(changeState(((int)GameState.Twelve)));
+                break;
+
+            case GameState.Thirteen://
+
+                stateHandler(((int)GameState.Thirteen));
+                StartCoroutine(changeState(((int)GameState.Thirteen)));
+                break;
+
+            case GameState.Fourteen://
+
+                stateHandler(((int)GameState.Fourteen));
+                StartCoroutine(changeState(((int)GameState.Fourteen)));
 
                 break;
 
-            case GameState.Thirteen:
+            case GameState.Fifthteen://
 
-                stateHandler(((int)GameState.Thirteen)); //
-
+                stateHandler(((int)GameState.Fifthteen));
+                StartCoroutine(changeState(((int)GameState.Fifthteen)));
                 break;
 
-            case GameState.Fourteen:
+            case GameState.Sixteen://
 
-                stateHandler(((int)GameState.Fourteen)); //
-
+                stateHandler(((int)GameState.Sixteen));
+                StartCoroutine(changeState(((int)GameState.Sixteen)));
                 break;
 
-            case GameState.Fifteen:
-
-                stateHandler(((int)GameState.Fifteen)); //
-
-                break;
-
-            case GameState.Sixteen:
-
-                stateHandler(((int)GameState.Sixteen)); //
-
-                break;
-
-            case GameState.Seventeen:
+            case GameState.Seventeen://
 
                 stateHandler(((int)GameState.Seventeen));
-
+                StartCoroutine(changeState(((int)GameState.Seventeen)));
                 break;
 
-            case GameState.Eighteen:
+            case GameState.Eightteen://
 
-                stateHandler(((int)GameState.Eighteen));
-
+                stateHandler(((int)GameState.Eightteen));
+                StartCoroutine(changeState(((int)GameState.Eightteen)));
                 break;
 
-            case GameState.Nineteen:
+            case GameState.Nineteen://
 
                 stateHandler(((int)GameState.Nineteen));
-
+                StartCoroutine(changeState(((int)GameState.Nineteen)));
                 break;
 
-            case GameState.Twenty:
+            case GameState.Twenty://
 
                 stateHandler(((int)GameState.Twenty));
-
+                StartCoroutine(changeState(((int)GameState.Twenty)));
                 break;
 
-            case GameState.TwentyOne:
+            case GameState.TwentyOne://
 
                 stateHandler(((int)GameState.TwentyOne));
+                StartCoroutine(changeState(((int)GameState.TwentyOne)));
                 break;
 
-            case GameState.TwentyTwo:
+            case GameState.TwentyTwo://
 
                 stateHandler(((int)GameState.TwentyTwo));
+                StartCoroutine(changeState(((int)GameState.TwentyTwo)));
+                break;
+
+            case GameState.TwentyThree://
+
+                stateHandler(((int)GameState.TwentyThree));
+                StartCoroutine(changeState(((int)GameState.TwentyThree)));
+                break;
+
+            case GameState.TwentyFour://
+
+                stateHandler(((int)GameState.TwentyFour));
+                StartCoroutine(changeState(((int)GameState.TwentyFour)));
+                break;
+
+            case GameState.TwentyFive://
+
+                stateHandler(((int)GameState.TwentyFive));
+                StartCoroutine(changeState(((int)GameState.TwentyFive)));
+                break;
+
+            case GameState.TwentySix://
+
+                stateHandler(((int)GameState.TwentySix));
+                StartCoroutine(changeState(((int)GameState.TwentySix)));
+                break;
+
+            case GameState.TwentySeven://
+
+                stateHandler(((int)GameState.TwentySeven));
+                StartCoroutine(changeState(((int)GameState.TwentySeven)));
                 break;
 
             case GameState.End:
@@ -222,14 +233,15 @@ public class GameManager : MonoBehaviour
     public IEnumerator changeState(int state)
     {
         // Debug.Log("Change State");
-        yield return new WaitForSeconds(durationOfSection[state]);
-        stateNumber++;
+        yield return new WaitForSeconds(durationOfSection[state]); // wait for however long we set in the "duration of section" passing in the int of the state
+        // once we have finished the state increase state number to move the next section
+        stateNumber = stateNumber + 1;
         experienceSection = GameState.Welcome + stateNumber;
-        stateHasRun = false;
-        yield return null;
+        stateHasRun = false; // allow the next state to run.
+        yield return null; // end the coroutine.
     }
 
-    public void stateHandler(int state)
+    public void stateHandler(int state) // at the start of each section send through the state number to get the correct UI and Voice line.
     {
         CallVO(state);
         UIRef.UIHandler(state);

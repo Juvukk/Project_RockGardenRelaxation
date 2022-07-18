@@ -9,7 +9,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip[] voiceLines;
     [SerializeField] private AudioSource voSource;
 
-    private void OnEnable()
+    //TwentyThree,TwentyFour,TwentyFive,TwentySix,End
+    private void OnEnable() //
     {
         EventManager.sfxEvent += playSfx;
         EventManager.voEvent += playVoiceLines;
@@ -21,11 +22,11 @@ public class AudioManager : MonoBehaviour
         EventManager.voEvent -= playVoiceLines;
     }
 
-    public void playVoiceLines(int clipIndex)
+    public void playVoiceLines(int clipIndex)// this is called via the VOEvent in the eventManager, the ClipIndex is the section in the Gamemanager script.
     {
-        if (voSource != null && !voSource.isPlaying)
+        if (voSource != null && !voSource.isPlaying) // check if the source is there and if the source is not already playing
         {
-            voSource.PlayOneShot(voiceLines[clipIndex]);
+            voSource.PlayOneShot(voiceLines[clipIndex]); // play the voiceline.
         }
     }
 
