@@ -7,10 +7,10 @@ public class InputTracker : MonoBehaviour
 {
     [SerializeField] public bool TriggerPulled;
     [SerializeField] private bool breathingIN = true;
-    [SerializeField] private float inBreathcounter = 3;
-    [SerializeField] private float outBreathcounter = 7;
+    [SerializeField] private float breathcounter = 0;
+
     private float buffer = 0.3f;
-    private float resetIN;
+
     private float resetOut;
     [SerializeField] private Text debugtext;
 
@@ -23,42 +23,34 @@ public class InputTracker : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        resetIN = inBreathcounter;
-        resetOut = outBreathcounter;
     }
 
     // Update is called once per frame;
     private void Update()
     {
         timer();
-        //   GetTriggerInteraction();
-        DetermineMovementFollowed();
     }
 
     private void timer()
     {
-        if (breathingIN)
+        breathcounter += Time.deltaTime;
+        if (breathingIN && breathcounter <= 7)
         {
-            Debug.Log("pull trigger in");
-            inBreathcounter -= Time.deltaTime;
             IncreaseThoughtfullness();
         }
-        if (inBreathcounter <= 0)
+        else if (breathingIN && breathcounter > 7)
         {
             breathingIN = false;
-            inBreathcounter = resetIN;
         }
-
-        if (!breathingIN)
+        else if (!breathingIN && breathcounter <= 10)
         {
-            Debug.Log("release trigger ");
-            outBreathcounter -= Time.deltaTime;
             DecreaseThoughtfullness();
         }
-        if (outBreathcounter <= 0)
+
+        if (!breathingIN && breathcounter > 10)
         {
+            breathcounter = 0;
             breathingIN = true;
-            outBreathcounter = resetOut;
         }
     }
 
@@ -86,7 +78,7 @@ public class InputTracker : MonoBehaviour
 
     public void IncreaseThoughtfullness()
     {
-        if (thoughtfullness < 100)
+        if (thoughtfullness < 200)
         {
             thoughtfullness += raiseThoughtMulitplier * Time.deltaTime;
         }
