@@ -18,7 +18,9 @@ public class GameManager : MonoBehaviour
         Welcome, Begin, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve,
 
         Thirteen, Fourteen, Fifthteen, Sixteen, Seventeen, Eightteen, Nineteen, Twenty, TwentyOne,
-        TwentyTwo, TwentyThree, TwentyFour, TwentyFive, TwentySix, TwentySeven, End
+        TwentyTwo, TwentyThree, TwentyFour, TwentyFive, TwentySix, TwentySeven, TwentyEight, TwentyNine, Thirty, 
+        ThirtyOne, ThirtyTwo, ThirtyThree, ThirtyFour, ThirtyFive, ThirtySix, ThirtySeven, ThirtyEight, ThirtyNine, 
+        Forty, FortyOne, FortyTwo, FortyThree, FortyFour, FortyFive, FortySix, FortySeven, FortyEight, FortyNine, End
     }
 
     public GameState experienceSection;
@@ -222,6 +224,138 @@ public class GameManager : MonoBehaviour
 
                 stateHandler(((int)GameState.TwentySeven));
                 StartCoroutine(changeState(((int)GameState.TwentySeven)));
+                break;
+
+            case GameState.TwentyEight:
+
+                stateHandler(((int)GameState.TwentyEight));
+                StartCoroutine(changeState(((int)GameState.TwentyEight)));
+                break;
+
+            case GameState.TwentyNine:
+
+                stateHandler(((int)GameState.TwentyNine));
+                StartCoroutine(changeState(((int)GameState.TwentyNine)));
+                break;
+
+            case GameState.Thirty:
+
+                stateHandler(((int)GameState.Thirty));
+                StartCoroutine(changeState(((int)GameState.Thirty)));
+                break;
+
+            case GameState.ThirtyOne:
+
+                stateHandler(((int)GameState.ThirtyOne));
+                StartCoroutine(changeState(((int)GameState.ThirtyOne)));
+                break;
+
+            case GameState.ThirtyTwo:
+
+                stateHandler(((int)GameState.ThirtyTwo));
+                StartCoroutine(changeState(((int)GameState.ThirtyTwo)));
+                break;
+
+            case GameState.ThirtyThree:
+
+                stateHandler(((int)GameState.ThirtyThree));
+                StartCoroutine(changeState(((int)GameState.ThirtyThree)));
+                break;
+
+            case GameState.ThirtyFour:
+
+                stateHandler(((int)GameState.ThirtyFour));
+                StartCoroutine(changeState(((int)GameState.ThirtyFour)));
+                break;
+
+            case GameState.ThirtyFive:
+
+                stateHandler(((int)GameState.ThirtyFive));
+                StartCoroutine(changeState(((int)GameState.ThirtyFive)));
+                break;
+
+            case GameState.ThirtySix:
+
+                stateHandler(((int)GameState.ThirtySix));
+                StartCoroutine(changeState(((int)GameState.ThirtySix)));
+                break;
+
+            case GameState.ThirtySeven:
+
+                stateHandler(((int)GameState.ThirtySeven));
+                StartCoroutine(changeState(((int)GameState.ThirtySeven)));
+                break;
+
+            case GameState.ThirtyEight:
+
+                stateHandler(((int)GameState.ThirtyEight));
+                StartCoroutine(changeState(((int)GameState.ThirtyEight)));
+                break;
+
+            case GameState.ThirtyNine:
+
+                stateHandler(((int)GameState.ThirtyNine));
+                StartCoroutine(changeState(((int)GameState.ThirtyNine)));
+                break;
+
+            case GameState.Forty:
+
+                stateHandler(((int)GameState.Forty));
+                StartCoroutine(changeState(((int)GameState.Forty)));
+                break;
+
+            case GameState.FortyOne:
+
+                stateHandler(((int)GameState.FortyOne));
+                StartCoroutine(changeState(((int)GameState.FortyOne)));
+                break;
+
+            case GameState.FortyTwo:
+
+                stateHandler(((int)GameState.FortyTwo));
+                StartCoroutine(changeState(((int)GameState.FortyTwo)));
+                break;
+
+            case GameState.FortyThree:
+
+                stateHandler(((int)GameState.FortyThree));
+                StartCoroutine(changeState(((int)GameState.FortyThree)));
+                break;
+
+            case GameState.FortyFour:
+
+                stateHandler(((int)GameState.FortyFour));
+                StartCoroutine(changeState(((int)GameState.FortyFour)));
+                break;
+
+            case GameState.FortyFive:
+
+                stateHandler(((int)GameState.FortyFive));
+                StartCoroutine(changeState(((int)GameState.FortyFive)));
+                break;
+
+            case GameState.FortySix:
+
+                stateHandler(((int)GameState.FortySix));
+                StartCoroutine(changeState(((int)GameState.FortySix)));
+                break;
+
+            case GameState.FortySeven:
+
+                stateHandler(((int)GameState.FortySeven));
+                StartCoroutine(changeState(((int)GameState.FortySeven)));
+                break;
+
+            case GameState.FortyEight:
+
+                stateHandler(((int)GameState.FortyEight));
+                StartCoroutine(changeState(((int)GameState.FortyEight)));
+                break;
+
+            case GameState.FortyNine:
+
+                stateHandler(((int)GameState.FortyNine));
+                StartCoroutine(changeState(((int)GameState.FortyNine)));
                 break;
 
             case GameState.End:
