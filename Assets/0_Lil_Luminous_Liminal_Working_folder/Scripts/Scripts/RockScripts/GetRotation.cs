@@ -8,6 +8,7 @@ public class GetRotation : MonoBehaviour
     [SerializeField] private float targetX;
     [SerializeField] private float targetY = 10f;
     [SerializeField] private float targetZ;
+    [SerializeField] private float minHieght = 1;
 
     // Start is called before the first frame update
     private void Start()
@@ -20,6 +21,9 @@ public class GetRotation : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        transform.Rotate(Time.deltaTime * speed * targetX, Time.deltaTime * speed * targetY, Time.deltaTime * speed * targetZ);
+        if (transform.position.y > minHieght)
+        {
+            transform.Rotate(Time.deltaTime * speed * targetX, Time.deltaTime * speed * targetY, Time.deltaTime * speed * targetZ);
+        }
     }
 }
