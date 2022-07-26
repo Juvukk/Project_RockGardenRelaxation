@@ -146,7 +146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28951309}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 1.729, z: -4.09}
+  m_LocalPosition: {x: 0.25, y: 1.174, z: -4.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9039901888281261484}
@@ -179,6 +179,11 @@ MonoBehaviour:
   raiseThoughtMulitplier: 3
   minHieght: 1
   floatHieght: 0
+  lerpTime: 0.5
+  myPos:
+  - {x: 0, y: 1.9, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!95 &28951312
 Animator:
   serializedVersion: 3
@@ -1088,7 +1093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500271343}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.87, y: 1.729, z: -1.08}
+  m_LocalPosition: {x: -2.87, y: 1.174, z: -1.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9039901888365102965}
@@ -1122,6 +1127,11 @@ MonoBehaviour:
   raiseThoughtMulitplier: 3
   minHieght: 1
   floatHieght: 0
+  lerpTime: 0.5
+  myPos:
+  - {x: 0, y: 1.9, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!95 &500271346
 Animator:
   serializedVersion: 3
@@ -1337,7 +1347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586151345}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 1.729, z: -0.76}
+  m_LocalPosition: {x: 0.1, y: 1.174, z: -0.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7392475842564008334}
@@ -1371,6 +1381,11 @@ MonoBehaviour:
   raiseThoughtMulitplier: 3
   minHieght: 1
   floatHieght: 0
+  lerpTime: 0.5
+  myPos:
+  - {x: 0, y: 1.9, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!95 &586151348
 Animator:
   serializedVersion: 3
@@ -1858,6 +1873,8 @@ MonoBehaviour:
   raiseThoughtMulitplier: 0
   minHieght: 0
   floatHieght: 2
+  lerpTime: 0
+  myPos: []
 --- !u!95 &876693770
 Animator:
   serializedVersion: 3
@@ -2369,7 +2386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273570623}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.69, y: 1.729, z: -2.11}
+  m_LocalPosition: {x: -1.69, y: 1.174, z: -2.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6839958884524750425}
@@ -2401,6 +2418,11 @@ MonoBehaviour:
   raiseThoughtMulitplier: 3
   minHieght: 1
   floatHieght: 0
+  lerpTime: 0.5
+  myPos:
+  - {x: 0, y: 1.9, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!95 &1273570626
 Animator:
   serializedVersion: 3
@@ -3181,7 +3203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459759038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.65, y: 1.729, z: 0.72}
+  m_LocalPosition: {x: 0.65, y: 1.174, z: 0.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4705152701091968621}
@@ -3213,6 +3235,11 @@ MonoBehaviour:
   raiseThoughtMulitplier: 3
   minHieght: 1
   floatHieght: 0
+  lerpTime: 0.5
+  myPos:
+  - {x: 0, y: 1.9, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!95 &1459759041
 Animator:
   serializedVersion: 3
@@ -3805,7 +3832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973950729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.62, y: 1.729, z: -2.73}
+  m_LocalPosition: {x: -0.62, y: 1.174, z: -2.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4741611550567828026}
@@ -3839,6 +3866,11 @@ MonoBehaviour:
   raiseThoughtMulitplier: 3
   minHieght: 1
   floatHieght: 0
+  lerpTime: 0.5
+  myPos:
+  - {x: 0, y: 1.9, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!95 &1973950732
 Animator:
   serializedVersion: 3
@@ -4109,7 +4141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082333390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.65, y: 1.702, z: -0.42}
+  m_LocalPosition: {x: -0.65, y: 1.147, z: -0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1431489824904446273}
@@ -4143,6 +4175,11 @@ MonoBehaviour:
   raiseThoughtMulitplier: 3
   minHieght: 1
   floatHieght: 0
+  lerpTime: 0.5
+  myPos:
+  - {x: 0, y: 1.9, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!95 &2082333393
 Animator:
   serializedVersion: 3
@@ -4317,7 +4354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943958408298000494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.44000012, y: 1.729, z: -1.62}
+  m_LocalPosition: {x: -0.44000012, y: 1.174, z: -1.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 655859335227727648}
@@ -4641,6 +4678,11 @@ MonoBehaviour:
   raiseThoughtMulitplier: 3
   minHieght: 1
   floatHieght: 0
+  lerpTime: 0.5
+  myPos:
+  - {x: 0, y: 1.9, z: 0}
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1, z: 0}
 --- !u!4 &2369382801568821128
 Transform:
   m_ObjectHideFlags: 0

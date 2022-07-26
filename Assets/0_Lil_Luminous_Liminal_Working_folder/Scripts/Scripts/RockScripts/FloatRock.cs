@@ -25,19 +25,29 @@ public class FloatRock : MonoBehaviour
 
     public float floatHieght = 0;
 
+    [SerializeField] [Range(0f, 4f)] private float lerpTime;
+    [SerializeField] private Vector3[] myPos;
+
+    private int posIndex = 0;
+    private int length;
+
+    private float time = 0f;
+
     // Start is called before the first frame update
     private void Start()
     {
         amplitutude = Random.Range(0.25f, 0.5f);
         startPos = transform.position;
+
+        length = myPos.Length;
     }
 
     // Update is called once per frame
     private void Update()
     {
         // timer();
-
-        MovementSin();
+        movementLerp();
+        //  MovementSin();
         // MovementFloat();
     }
 
@@ -95,5 +105,21 @@ public class FloatRock : MonoBehaviour
     {
         floatHieght = 1 + (thoughtfullness / 100);
         transform.position = new Vector3(transform.position.x, floatHieght, transform.position.z);
+    }
+
+    private void movementLerp()
+    {
+        myPos[posIndex].x = transform.position.x;
+        myPos[posIndex].z = transform.position.z;
+        transform.position = Vector3.Lerp(transform.position, myPos[posIndex], lerpTime * Time.deltaTime);
+
+        time = Mathf.Lerp(time, 1f, lerpTime * Time.deltaTime);
+
+        if (time > 0.9f)
+        {
+            time = 0f;
+            posIndex++;
+            posIndex = (posIndex >= length) ? 0 : posIndex;
+        }
     }
 }
