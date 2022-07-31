@@ -2,10 +2,10 @@ using UnityEngine.Audio;
 using UnityEngine;
 
 [System.Serializable]
-public class SFXSound
+public class SoundData
 {
 
-	public string name;
+	public string soundName;
 
 	public AudioClip clip;
 
@@ -22,6 +22,8 @@ public class SFXSound
 	public bool loop = false;
 
 	public AudioMixerGroup mixerGroup;
+
+	public bool playWhenPaused = false;
 
 	[HideInInspector]
 	public AudioSource source;
