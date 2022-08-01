@@ -47,7 +47,7 @@ public class FloatRock : MonoBehaviour
     {
         // timer();
         movementLerp();
-        //  MovementSin();
+        //MovementSin();
         // MovementFloat();
     }
 
@@ -73,7 +73,8 @@ public class FloatRock : MonoBehaviour
 
         if (breathingIN && breathcounter <= inCounter) // less than 7 so we breathing in
         {
-            IncreaseThoughtfullness();
+            //IncreaseThoughtfullness();
+            lerpTime = .25f;
         }
         else if (breathingIN && breathcounter > inCounter)
         {
@@ -81,7 +82,9 @@ public class FloatRock : MonoBehaviour
         }
         else if (!breathingIN && breathcounter <= outCounter)
         {
-            DecreaseThoughtfullness();
+            // DecreaseThoughtfullness();
+
+            lerpTime = 0.5f;
         }
 
         if (!breathingIN && breathcounter >= outCounter)
