@@ -3423,7 +3423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIRef: {fileID: 343197687}
-  stateNumber: 2
+  stateNumber: 0
   durationOfSection:
   - 40
   - 5
@@ -3476,7 +3476,7 @@ MonoBehaviour:
   - 20
   stateHasRun: 0
   experienceBegun: 0
-  experienceSection: 2
+  experienceSection: 0
 --- !u!1 &1523663966
 GameObject:
   m_ObjectHideFlags: 0
