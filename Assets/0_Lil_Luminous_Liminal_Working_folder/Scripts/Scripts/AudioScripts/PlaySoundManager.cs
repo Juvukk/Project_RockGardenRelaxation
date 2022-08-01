@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlaySoundManager : MonoBehaviour
 {
 
+    // This script is to be placed on any UI behaviour/inspector trigger events that need to run sound (button clicks, etc)
+
     public AudioManager.ArrayName arrayName;
 
 

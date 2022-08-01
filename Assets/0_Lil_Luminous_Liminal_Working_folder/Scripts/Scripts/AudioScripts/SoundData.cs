@@ -23,7 +23,7 @@ public class SoundData
 
 	public AudioMixerGroup mixerGroup;
 
-	public bool playWhenPaused = false;
+	public bool playOnAwake = false;
 
 	[HideInInspector]
 	public AudioSource source;

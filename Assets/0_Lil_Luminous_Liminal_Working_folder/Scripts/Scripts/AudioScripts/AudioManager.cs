@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
 
     public SoundData[] musicSounds;
 
+    public AudioSource voiceAudioSource;
 
     public enum ArrayName
     {
@@ -23,15 +24,8 @@ public class AudioManager : MonoBehaviour
         music
     }
 
-    //old content
-
-    [SerializeField] private AudioSource[] audioSources;
-    [SerializeField] private AudioClip[] SfxClips;
     [SerializeField] private AudioClip[] voiceLines;
-    [SerializeField] private AudioSource voSource;
 
-    //TwentyThree,TwentyFour,TwentyFive,TwentySix,End
-    //break
 
     public void Awake()
     {
@@ -40,6 +34,7 @@ public class AudioManager : MonoBehaviour
 			s.source = gameObject.AddComponent<AudioSource>();
 			s.source.clip = s.clip;
 			s.source.loop = s.loop;
+            s.source.playOnAwake = s.playOnAwake;
 
 			s.source.outputAudioMixerGroup = mixerGroup;
 		}
@@ -49,8 +44,12 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.loop = s.loop;
+            s.source.playOnAwake = s.playOnAwake;
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
 
             s.source.outputAudioMixerGroup = mixerGroup;
+            voiceAudioSource = s.source;
         }
 
         foreach (SoundData s in sfxSounds)
@@ -58,6 +57,7 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.loop = s.loop;
+            s.source.playOnAwake = s.playOnAwake;
 
             s.source.outputAudioMixerGroup = mixerGroup;
         }
@@ -93,37 +93,32 @@ public class AudioManager : MonoBehaviour
 
     private void OnEnable() // B: are these enable/disables saying to reset the int in the sfx/voEvent variables? Is the Enable just parsing through the int from sfx/vo to the functions?
     {
-        EventManager.sfxEvent += PlaySfx;
         EventManager.voEvent += PlayVoiceLines;
     }
 
     private void OnDisable()
     {
-        EventManager.sfxEvent -= PlaySfx;
         EventManager.voEvent -= PlayVoiceLines;
     }
 
+    // subscribing/unsubscribing from the delegate
+
+
     public void PlayVoiceLines(int clipIndex)// this is called via the VOEvent in the eventManager, the ClipIndex is the section in the Gamemanager script.
     {
-        if (voSource != null && !voSource.isPlaying) // check if the source is there and if the source is not already playing
+        if (voiceAudioSource != null && !voiceAudioSource.isPlaying) // check if the source is there and if the source is not already playing
         {
-            voSource.PlayOneShot(voiceLines[clipIndex]); // play the voiceline.
+            voiceAudioSource.PlayOneShot(voiceLines[clipIndex]); // play the voiceline. this grabs the number (clipindex) from the voicelines field, and shoves it into the audio source and plays
         }
     }
 
-    public void PlaySfx(int clipIndex, int SourceIndex)
-    {
-        if (!audioSources[SourceIndex].isPlaying)
-        {
-            audioSources[SourceIndex].PlayOneShot(SfxClips[clipIndex]);
-        }
-    }
+
+ 
+
+
     ///
     /// Updated code for the game manager/playing functionality
     /// 
-    /// In the game manager, have the following lines of code:
-    /// 
-    /// For Voice Lines: FindObjectOfType<AudioManager>().Play("Voiceline" + clipIndex, AudioManager.ArrayName.voice); <-- be aware that this won't account for repeated lines yet. Will be accommodating that somehow in the next week or so.
     /// For SFX sounds: FindObjectOfType<AudioManager>().Play("insert sound name", AudioManager.ArrayName.sfx);
     /// 
     /// 
