@@ -147,13 +147,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28951309}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 1.127, z: -4.09}
+  m_LocalPosition: {x: 0.25, y: 1.1, z: -4.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9039901888281261484}
   - {fileID: 2116999927}
   m_Father: {fileID: 2369382801568821128}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &28951311
 MonoBehaviour:
@@ -167,8 +167,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
+  frequency: 0
+  amplitutude: 0
+  inCounter: 7
+  outCounter: 10
+  breathingIN: 1
+  breathcounter: 0
+  maxThought: 0
+  minThought: 0
+  thoughtfullness: 0
+  lowerThoughtMulitplier: 0
+  raiseThoughtMulitplier: 0
+  minHieght: 0
   floatHieght: 2
+  lerpTime: 0.35
+  myPos:
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1.1, z: 0}
 --- !u!95 &28951312
 Animator:
   serializedVersion: 3
@@ -177,7 +192,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28951309}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
   m_CullingMode: 0
@@ -365,6 +380,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &152853034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -617,6 +633,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &327023240
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -711,6 +728,7 @@ MonoBehaviour:
   targetX: 1.7
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &342094275
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1094,6 +1112,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &434157795
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1165,7 +1184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500271343}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.87, y: 1.127, z: -1.08}
+  m_LocalPosition: {x: -2.87, y: 1.1, z: -1.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9039901888365102965}
@@ -1186,8 +1205,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
+  frequency: 0
+  amplitutude: 0
+  inCounter: 7
+  outCounter: 10
+  breathingIN: 1
+  breathcounter: 0
+  maxThought: 0
+  minThought: 0
+  thoughtfullness: 0
+  lowerThoughtMulitplier: 0
+  raiseThoughtMulitplier: 0
+  minHieght: 0
   floatHieght: 2
+  lerpTime: 0.35
+  myPos:
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1.1, z: 0}
 --- !u!95 &500271346
 Animator:
   serializedVersion: 3
@@ -1196,7 +1230,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500271343}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
   m_CullingMode: 0
@@ -1331,6 +1365,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &545579610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1496,7 +1531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586151345}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 1.127, z: -0.76}
+  m_LocalPosition: {x: 0.1, y: 1.1, z: -0.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7392475842564008334}
@@ -1517,8 +1552,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
+  frequency: 0
+  amplitutude: 0
+  inCounter: 7
+  outCounter: 10
+  breathingIN: 1
+  breathcounter: 0
+  maxThought: 0
+  minThought: 0
+  thoughtfullness: 0
+  lowerThoughtMulitplier: 0
+  raiseThoughtMulitplier: 0
+  minHieght: 0
   floatHieght: 2
+  lerpTime: 0.35
+  myPos:
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1.1, z: 0}
 --- !u!95 &586151348
 Animator:
   serializedVersion: 3
@@ -1527,7 +1577,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586151345}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
   m_CullingMode: 0
@@ -1587,6 +1637,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &590384400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2512,7 +2563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273570623}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.69, y: 1.127, z: -2.11}
+  m_LocalPosition: {x: -1.69, y: 1.1, z: -2.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6839958884524750425}
@@ -2531,8 +2582,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
+  frequency: 0
+  amplitutude: 0
+  inCounter: 7
+  outCounter: 10
+  breathingIN: 1
+  breathcounter: 0
+  maxThought: 0
+  minThought: 0
+  thoughtfullness: 0
+  lowerThoughtMulitplier: 0
+  raiseThoughtMulitplier: 0
+  minHieght: 0
   floatHieght: 2
+  lerpTime: 0.35
+  myPos:
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1.1, z: 0}
 --- !u!95 &1273570626
 Animator:
   serializedVersion: 3
@@ -2541,7 +2607,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273570623}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
   m_CullingMode: 0
@@ -2692,6 +2758,7 @@ MonoBehaviour:
   targetX: 1.7
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &1324352747
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2887,71 +2954,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1331270972}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1359841717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1359841718}
-  - component: {fileID: 1359841720}
-  - component: {fileID: 1359841719}
-  m_Layer: 0
-  m_Name: FloatingRock (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1359841718
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359841717}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.44000012, y: 1.127, z: -1.62}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2369382801568821128}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1359841719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359841717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
-  floatHieght: 2
---- !u!95 &1359841720
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359841717}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1369507232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3377,7 +3379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459759038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.65, y: 1.127, z: 0.72}
+  m_LocalPosition: {x: 0.65, y: 1.1, z: 0.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4705152701091968621}
@@ -3396,8 +3398,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
+  frequency: 0
+  amplitutude: 0
+  inCounter: 7
+  outCounter: 10
+  breathingIN: 1
+  breathcounter: 0
+  maxThought: 0
+  minThought: 0
+  thoughtfullness: 0
+  lowerThoughtMulitplier: 0
+  raiseThoughtMulitplier: 0
+  minHieght: 0
   floatHieght: 2
+  lerpTime: 0.35
+  myPos:
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1.1, z: 0}
 --- !u!95 &1459759041
 Animator:
   serializedVersion: 3
@@ -3406,7 +3423,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459759038}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
   m_CullingMode: 0
@@ -3536,7 +3553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIRef: {fileID: 343197687}
-  getInput: {fileID: 4226282194777638783}
   stateNumber: 0
   durationOfSection:
   - 40
@@ -3640,6 +3656,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &1523663969
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4172,7 +4189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973950729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.62, y: 1.127, z: -2.73}
+  m_LocalPosition: {x: -0.62, y: 1.1, z: -2.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4741611550567828026}
@@ -4193,8 +4210,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
+  frequency: 0
+  amplitutude: 0
+  inCounter: 7
+  outCounter: 10
+  breathingIN: 1
+  breathcounter: 0
+  maxThought: 0
+  minThought: 0
+  thoughtfullness: 0
+  lowerThoughtMulitplier: 0
+  raiseThoughtMulitplier: 0
+  minHieght: 0
   floatHieght: 2
+  lerpTime: 0.35
+  myPos:
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1.1, z: 0}
 --- !u!95 &1973950732
 Animator:
   serializedVersion: 3
@@ -4203,7 +4235,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973950729}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
   m_CullingMode: 0
@@ -5318,6 +5350,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &2022376374
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5389,14 +5422,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082333390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.65, y: 1.127, z: -0.42}
+  m_LocalPosition: {x: -0.65, y: 1.1, z: -0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1431489824904446273}
   - {fileID: 545579608}
   - {fileID: 590384398}
   m_Father: {fileID: 2369382801568821128}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2082333392
 MonoBehaviour:
@@ -5410,8 +5443,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
+  frequency: 0
+  amplitutude: 0
+  inCounter: 7
+  outCounter: 10
+  breathingIN: 1
+  breathcounter: 0
+  maxThought: 0
+  minThought: 0
+  thoughtfullness: 0
+  lowerThoughtMulitplier: 0
+  raiseThoughtMulitplier: 0
+  minHieght: 0
   floatHieght: 0
+  lerpTime: 0.35
+  myPos:
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1.1, z: 0}
 --- !u!95 &2082333393
 Animator:
   serializedVersion: 3
@@ -5420,7 +5468,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082333390}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
   m_CullingMode: 0
@@ -5480,6 +5528,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!23 &2116999929
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5585,7 +5634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943958408298000494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.44000012, y: 1.127, z: -1.62}
+  m_LocalPosition: {x: -0.44000012, y: 1.1, z: -1.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 655859335227727648}
@@ -5619,7 +5668,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943958408298000494}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: caee67fdaebb11841b615ea5ebe73219, type: 2}
   m_CullingMode: 0
@@ -5896,8 +5945,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c34221caa4634fb1c12a29df273e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getValue: {fileID: 4226282194777638783}
+  frequency: 0
+  amplitutude: 0
+  inCounter: 7
+  outCounter: 10
+  breathingIN: 1
+  breathcounter: 0
+  maxThought: 0
+  minThought: 0
+  thoughtfullness: 0
+  lowerThoughtMulitplier: 0
+  raiseThoughtMulitplier: 0
+  minHieght: 0
   floatHieght: 2
+  lerpTime: 0.35
+  myPos:
+  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 1.1, z: 0}
 --- !u!4 &2369382801568821128
 Transform:
   m_ObjectHideFlags: 0
@@ -5916,7 +5980,6 @@ Transform:
   - {fileID: 500271344}
   - {fileID: 586151346}
   - {fileID: 1973950730}
-  - {fileID: 1359841718}
   - {fileID: 28951310}
   - {fileID: 2082333391}
   m_Father: {fileID: 4862715310830116113}
@@ -6037,6 +6100,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!1 &2759515764918563335
 GameObject:
   m_ObjectHideFlags: 0
@@ -8131,14 +8195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a64cd444a9a7040a0a2e41ae30bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerPulled: 0
-  breathingIN: 1
-  breathcounter: 0
-  debugtext: {fileID: 4226282194664321501}
-  thoughtfullness: 1.7
-  lowerThoughtMulitplier: 1.7
-  raiseThoughtMulitplier: 10
-  triggerReleaseThreshold: 0.1
 --- !u!1 &4226282195013285288
 GameObject:
   m_ObjectHideFlags: 0
@@ -9060,6 +9116,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!114 &4594167947798870600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9465,6 +9522,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!1 &5417679752338458559
 GameObject:
   m_ObjectHideFlags: 0
@@ -9500,6 +9558,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!33 &5466127229143082091
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9623,6 +9682,7 @@ MonoBehaviour:
   targetX: 1.7
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!114 &5930792570288460539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10348,6 +10408,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!33 &7964240828355525495
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10547,6 +10608,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!1 &8617302869474046622
 GameObject:
   m_ObjectHideFlags: 0
@@ -10600,6 +10662,7 @@ MonoBehaviour:
   targetX: 0
   targetY: 10
   targetZ: 0
+  minHieght: 1
 --- !u!4 &9039901888281261484
 Transform:
   m_ObjectHideFlags: 0
