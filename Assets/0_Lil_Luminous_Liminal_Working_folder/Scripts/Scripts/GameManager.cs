@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private MeditationScript UIRef;
-    [SerializeField] private InputTracker getInput;
+
     private float timer;
     [SerializeField] private int stateNumber = 0;
     [SerializeField] private float[] durationOfSection;
@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
         Welcome, Begin, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve,
 
         Thirteen, Fourteen, Fifthteen, Sixteen, Seventeen, Eightteen, Nineteen, Twenty, TwentyOne,
-        TwentyTwo, TwentyThree, TwentyFour, TwentyFive, TwentySix, TwentySeven, TwentyEight, TwentyNine, Thirty, 
-        ThirtyOne, ThirtyTwo, ThirtyThree, ThirtyFour, ThirtyFive, ThirtySix, ThirtySeven, ThirtyEight, ThirtyNine, 
+        TwentyTwo, TwentyThree, TwentyFour, TwentyFive, TwentySix, TwentySeven, TwentyEight, TwentyNine, Thirty,
+        ThirtyOne, ThirtyTwo, ThirtyThree, ThirtyFour, ThirtyFive, ThirtySix, ThirtySeven, ThirtyEight, ThirtyNine,
         Forty, FortyOne, FortyTwo, FortyThree, FortyFour, FortyFive, FortySix, FortySeven, FortyEight, FortyNine, End
     }
 
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        experienceSection = GameState.Welcome; // set the state to be welcome, this can be commented out to test other states.
+        //experienceSection = GameState.Welcome; // set the state to be welcome, this can be commented out to test other states.
     }
 
     private void Update()
