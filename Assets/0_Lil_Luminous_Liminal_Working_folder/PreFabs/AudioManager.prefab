@@ -44,8 +44,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 24300002, guid: 70574ac349e10a44b8183cf46bea45c9, type: 2}
-  ambienceSounds:
-  - soundName: TestSFX1
+  sfxSounds:
+  - soundName: WaterLoop
+    clip: {fileID: 8300000, guid: 8f93c896281e1f4489210aa17b152956, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
+    source: {fileID: 0}
+  - soundName: RockDown
     clip: {fileID: 8300000, guid: 6bd22058ee0f5d64c98f88d05151b2db, type: 3}
     volume: 1
     volumeVariance: 0
@@ -54,37 +65,40 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
-  - soundName: 
-    clip: {fileID: 0}
-    volume: 0
+  - soundName: RockUp
+    clip: {fileID: 8300000, guid: 32a0c92899cdaed4f83c0e38c73bfd52, type: 3}
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
-    mixerGroup: {fileID: 0}
-    playWhenPaused: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
     source: {fileID: 0}
-  - soundName: 
-    clip: {fileID: 0}
-    volume: 0
+  - soundName: Sand
+    clip: {fileID: 8300000, guid: 37ea4283ac8dd254eacf63a1272ac6eb, type: 3}
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
-    mixerGroup: {fileID: 0}
-    playWhenPaused: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
     source: {fileID: 0}
-  - soundName: 
-    clip: {fileID: 0}
-    volume: 0
+  - soundName: Sparkle1
+    clip: {fileID: 8300000, guid: c958c2b8f48e21247992969f32883bec, type: 3}
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
-    mixerGroup: {fileID: 0}
-    playWhenPaused: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
     source: {fileID: 0}
   voiceSounds:
   - soundName: Voiceline1
@@ -96,7 +110,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline2
     clip: {fileID: 8300000, guid: 0ba95d70b32957341af2f97f5a2ac16a, type: 3}
@@ -107,7 +121,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline3
     clip: {fileID: 8300000, guid: a804b3fd248b86a4e8b859975e3b5824, type: 3}
@@ -118,7 +132,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline4
     clip: {fileID: 8300000, guid: 104217aaef7d9c14799f3d7057b61ef5, type: 3}
@@ -129,7 +143,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline5
     clip: {fileID: 8300000, guid: 6922d14c7dff46e4eb9ae263b8dadfd2, type: 3}
@@ -140,7 +154,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline6
     clip: {fileID: 8300000, guid: 73fa3f0a5003f8b45bdb6581ed393337, type: 3}
@@ -151,7 +165,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline7
     clip: {fileID: 8300000, guid: 77a17d2fc1eb0db479c76d8b7f4238bb, type: 3}
@@ -162,7 +176,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline8
     clip: {fileID: 8300000, guid: e7fba7333c8bbcc499e038515a61f2d5, type: 3}
@@ -173,7 +187,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline9
     clip: {fileID: 8300000, guid: 976f354ac7872214cb2afd1a52cd97bf, type: 3}
@@ -184,7 +198,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline10
     clip: {fileID: 8300000, guid: 95ec3df80ae179e41b13bb526c80ea68, type: 3}
@@ -195,7 +209,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline11
     clip: {fileID: 8300000, guid: ea157acba5dad67498ce7d40b18619ce, type: 3}
@@ -206,7 +220,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline12
     clip: {fileID: 8300000, guid: b8c231da0c4eb7e49842917bfe191b83, type: 3}
@@ -217,7 +231,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline13
     clip: {fileID: 8300000, guid: 442fef0265481904c8fbc822a8c7a55d, type: 3}
@@ -228,7 +242,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline14
     clip: {fileID: 8300000, guid: c6c1aadc8c0a94946aad4ce6689b0296, type: 3}
@@ -239,7 +253,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline15
     clip: {fileID: 8300000, guid: f48f181618f9e794ba651c241d9e2936, type: 3}
@@ -250,7 +264,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline16
     clip: {fileID: 8300000, guid: 82fb985ba54e0e245acbf4a4194d98aa, type: 3}
@@ -261,7 +275,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline17
     clip: {fileID: 8300000, guid: 7b080861d78b3e04792d5d05d24b2266, type: 3}
@@ -272,7 +286,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline18
     clip: {fileID: 8300000, guid: aee60f1b0e6f26e4b952284f2d4c66f6, type: 3}
@@ -283,7 +297,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline19
     clip: {fileID: 8300000, guid: 7e79b13132d28ac48ba5691431f90d15, type: 3}
@@ -294,7 +308,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline20
     clip: {fileID: 8300000, guid: 632d5544625050f41bc261624994a130, type: 3}
@@ -305,7 +319,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline21
     clip: {fileID: 8300000, guid: e20273e8c34dfa544b4f9aeebcfd0d63, type: 3}
@@ -316,7 +330,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline22
     clip: {fileID: 8300000, guid: 5a88bd2ac16cf9d44b436d40d588bd36, type: 3}
@@ -327,7 +341,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline23
     clip: {fileID: 8300000, guid: ffa2d554db9565a4c89df20586c7e58e, type: 3}
@@ -338,7 +352,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline24
     clip: {fileID: 8300000, guid: 839457662d516a54e9e5033b040fe748, type: 3}
@@ -349,7 +363,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline25
     clip: {fileID: 8300000, guid: b0da9cc1196e4ba42b5c1bca6bceccba, type: 3}
@@ -360,7 +374,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline26
     clip: {fileID: 8300000, guid: 8b9b5d001aca7d843b7b1f4145f55a3d, type: 3}
@@ -371,7 +385,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline27
     clip: {fileID: 8300000, guid: 09c713ad010099246aeead4e92308359, type: 3}
@@ -382,7 +396,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline28
     clip: {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
@@ -393,7 +407,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline29
     clip: {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
@@ -404,7 +418,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline30
     clip: {fileID: 8300000, guid: ea63c2b1e9352814098b750c4c2f47ae, type: 3}
@@ -415,7 +429,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline31
     clip: {fileID: 8300000, guid: 8cbb602b1dbb19b4baf64b70d8dd03f4, type: 3}
@@ -426,7 +440,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline32
     clip: {fileID: 8300000, guid: 746dd85a518230c44950c9e928a2e2b2, type: 3}
@@ -437,7 +451,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   - soundName: Voiceline33
     clip: {fileID: 8300000, guid: 915878d3a06a6264da8a6c17b9de3282, type: 3}
@@ -448,7 +462,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 2974793536137654839, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
   musicSounds:
   - soundName: BackgroundMusic
@@ -460,59 +474,61 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: -7218265718978624988, guid: 70574ac349e10a44b8183cf46bea45c9,
       type: 2}
-    playWhenPaused: 0
+    playOnAwake: 0
     source: {fileID: 0}
-  audioSources:
-  - {fileID: 0}
-  SfxClips: []
-  voiceLines:
-  - {fileID: 8300000, guid: 4edf88d4f248f094d9ec591530278979, type: 3}
-  - {fileID: 8300000, guid: 0ba95d70b32957341af2f97f5a2ac16a, type: 3}
-  - {fileID: 8300000, guid: a804b3fd248b86a4e8b859975e3b5824, type: 3}
-  - {fileID: 8300000, guid: 104217aaef7d9c14799f3d7057b61ef5, type: 3}
-  - {fileID: 8300000, guid: 6922d14c7dff46e4eb9ae263b8dadfd2, type: 3}
-  - {fileID: 8300000, guid: 73fa3f0a5003f8b45bdb6581ed393337, type: 3}
-  - {fileID: 8300000, guid: 77a17d2fc1eb0db479c76d8b7f4238bb, type: 3}
-  - {fileID: 8300000, guid: e7fba7333c8bbcc499e038515a61f2d5, type: 3}
-  - {fileID: 8300000, guid: 976f354ac7872214cb2afd1a52cd97bf, type: 3}
-  - {fileID: 8300000, guid: 95ec3df80ae179e41b13bb526c80ea68, type: 3}
-  - {fileID: 8300000, guid: ea157acba5dad67498ce7d40b18619ce, type: 3}
-  - {fileID: 8300000, guid: b8c231da0c4eb7e49842917bfe191b83, type: 3}
-  - {fileID: 8300000, guid: 442fef0265481904c8fbc822a8c7a55d, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: c6c1aadc8c0a94946aad4ce6689b0296, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: f48f181618f9e794ba651c241d9e2936, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: 82fb985ba54e0e245acbf4a4194d98aa, type: 3}
-  - {fileID: 8300000, guid: 7b080861d78b3e04792d5d05d24b2266, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: aee60f1b0e6f26e4b952284f2d4c66f6, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: 7e79b13132d28ac48ba5691431f90d15, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: 632d5544625050f41bc261624994a130, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: e20273e8c34dfa544b4f9aeebcfd0d63, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: 5a88bd2ac16cf9d44b436d40d588bd36, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: ffa2d554db9565a4c89df20586c7e58e, type: 3}
-  - {fileID: 8300000, guid: 3bc261674e0fc99449319f7a078bddfd, type: 3}
-  - {fileID: 8300000, guid: aa763b6bb4aeec840a8f64a2ec9b67f4, type: 3}
-  - {fileID: 8300000, guid: 839457662d516a54e9e5033b040fe748, type: 3}
-  - {fileID: 8300000, guid: b0da9cc1196e4ba42b5c1bca6bceccba, type: 3}
-  - {fileID: 8300000, guid: 8b9b5d001aca7d843b7b1f4145f55a3d, type: 3}
-  - {fileID: 8300000, guid: 09c713ad010099246aeead4e92308359, type: 3}
-  voSource: {fileID: 0}
+  breathingSounds:
+  - soundName: BellDing
+    clip: {fileID: 8300000, guid: 452d578fc5d1e8449ae8c86bad4c8dd8, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
+    source: {fileID: 0}
+  - soundName: BellRing
+    clip: {fileID: 8300000, guid: 0215d889aa11b1b4e8680be0bba4efa3, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
+    source: {fileID: 0}
+  - soundName: WindChime1
+    clip: {fileID: 8300000, guid: 465f93541e8f2d34a85052976fcd1597, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
+    source: {fileID: 0}
+  - soundName: WindChime2
+    clip: {fileID: 8300000, guid: 0e93cb36d5dee974a85eea5dc35e71fb, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
+    source: {fileID: 0}
+  - soundName: WindChime3
+    clip: {fileID: 8300000, guid: 2ddcc33be2a507f418776f595162542f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -8196781491613491006, guid: 70574ac349e10a44b8183cf46bea45c9,
+      type: 2}
+    playOnAwake: 0
+    source: {fileID: 0}
