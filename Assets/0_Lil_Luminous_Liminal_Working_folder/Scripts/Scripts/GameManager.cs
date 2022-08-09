@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
                 stateHandler(((int)GameState.Begin));//
                 StartCoroutine(changeState(((int)GameState.Begin)));
-
+                //EventManager.bekkiIsCool?.Invoke();
                 break;
 
             case GameState.Two:
