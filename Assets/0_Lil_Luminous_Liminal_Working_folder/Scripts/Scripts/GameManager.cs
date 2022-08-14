@@ -378,7 +378,7 @@ public class GameManager : MonoBehaviour
     public void stateHandler(int state) // at the start of each section send through the state number to get the correct UI and Voice line.
     {
         CallVO(state);
-        UIRef.UIHandler(state);
+        //UIRef.UIHandler(state);
     }
 
     public void CallVO(int line)
