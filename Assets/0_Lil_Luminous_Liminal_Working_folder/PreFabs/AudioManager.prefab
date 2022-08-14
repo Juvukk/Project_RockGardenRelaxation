@@ -653,7 +653,7 @@ MonoBehaviour:
     source: {fileID: 0}
   musicSounds:
   - soundName: BackgroundMusic
-    clip: {fileID: 8300000, guid: 65b674aad5d68834299ff800df8369a9, type: 3}
+    clip: {fileID: 8300000, guid: e8fc8a089798d1c4bbccd689f03d538c, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
