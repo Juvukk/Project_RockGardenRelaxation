@@ -94,7 +94,7 @@ public class AudioManager : MonoBehaviour
     {
         Play("BackgroundMusic", ArrayName.music);
         Play("WaterLoop", ArrayName.sfx);
-        PlayBreathingGuide();
+      //  PlayBreathingGuide();
     }
 
     public void Play(string sound, ArrayName arrayName)
@@ -240,41 +240,41 @@ public class AudioManager : MonoBehaviour
 
 
 
-    IEnumerator BreathingGuideCoroutine()
-    {
-        // this function is for running the breathing guide. currently THIS IS JANKY. IT IS ONLY TO TEST THE SOUNDS. it is run on awake, runs a hard coded few seconds for the wait, then triggers the below function which triggers this function again. As I said. Janky.
-        switch (isGoingDown)
-        {
-            case true:
-                yield return new WaitForSeconds(7);
-                isGoingDown = false;
-            break;
-            case false:
-                yield return new WaitForSeconds(3);
-                isGoingDown = true;
-                break;
-        }
+    //IEnumerator BreathingGuideCoroutine()
+    //{
+    //    // this function is for running the breathing guide. currently THIS IS JANKY. IT IS ONLY TO TEST THE SOUNDS. it is run on awake, runs a hard coded few seconds for the wait, then triggers the below function which triggers this function again. As I said. Janky.
+    //    switch (isGoingDown)
+    //    {
+    //        case true:
+    //            yield return new WaitForSeconds(7);
+    //            isGoingDown = false;
+    //        break;
+    //        case false:
+    //            yield return new WaitForSeconds(3);
+    //            isGoingDown = true;
+    //            break;
+    //    }
 
-        PlayBreathingGuide();
+    //    PlayBreathingGuide();
 
-        yield return null;
-    }
+    //    yield return null;
+    //}
 
-    public void PlayBreathingGuide()
-    {
-        ArrayName arrayName = ArrayName.breathing;
+    //public void PlayBreathingGuide()
+    //{
+    //    ArrayName arrayName = ArrayName.breathing;
 
-        string clipName = breathingSounds[indexNumber].soundName;
+    //    string clipName = breathingSounds[indexNumber].soundName;
 
-        Play(clipName, arrayName);
-        indexNumber++;
-        if (indexNumber > 4)
-        {
-            indexNumber = 0;
-        }
+    //    Play(clipName, arrayName);
+    //    indexNumber++;
+    //    if (indexNumber > 4)
+    //    {
+    //        indexNumber = 0;
+    //    }
 
-        StartCoroutine(BreathingGuideCoroutine());
-    }
+    //    StartCoroutine(BreathingGuideCoroutine());
+    //}
 
 
     // For SFX sounds: FindObjectOfType<AudioManager>().Play("insert sound name", AudioManager.ArrayName.sfx);
