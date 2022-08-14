@@ -134,100 +134,103 @@ public class AudioManager : MonoBehaviour
 
         int clipNumber = clipIndex + addToClipNumber;
 
-        switch (clipIndex)
-        {
-            default:
-                clipName = "Voiceline" + clipNumber;
-                break;
-            case 13:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 14:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 16:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 17:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 19:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 20:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 21:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 22:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 25:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 26:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 28:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 29:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 31:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 32:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 34:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 35:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 37:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 38:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 40:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 41:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-            case 43:
-                clipName = "Voiceline" + 28;
-                addToClipNumber--;
-                break;
-            case 44:
-                clipName = "Voiceline" + 29;
-                addToClipNumber--;
-                break;
-        }
+
+        clipName = "Voiceline" + clipNumber;
+
+        //switch (clipIndex)
+        //{
+        //    default:
+        //        clipName = "Voiceline" + clipNumber;
+        //        break;
+        //    case 13:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 14:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 16:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 17:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 19:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 20:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 21:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 22:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 25:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 26:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 28:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 29:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 31:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 32:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 34:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 35:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 37:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 38:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 40:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 41:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //    case 43:
+        //        clipName = "Voiceline" + 28;
+        //        addToClipNumber--;
+        //        break;
+        //    case 44:
+        //        clipName = "Voiceline" + 29;
+        //        addToClipNumber--;
+        //        break;
+        //}
 
         Play(clipName, arrayName);
 
