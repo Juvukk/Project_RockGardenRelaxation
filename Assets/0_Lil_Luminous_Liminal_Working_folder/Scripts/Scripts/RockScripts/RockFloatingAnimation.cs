@@ -24,10 +24,10 @@ public class RockFloatingAnimation : MonoBehaviour
             default:
                 //do nothing
                 break;
-            case 2:
+            case 2: //make this a number set in the inspector 
                 rockAnimator.SetBool("NeedsToMove", true);
                 break;
-            case 49:
+            case 49: //make this a number set in the inspector
                 rockAnimator.SetBool("NeedsToMove", false);
                 break;
         }         

@@ -60,6 +60,8 @@ public class AudioManager : MonoBehaviour
             s.source.outputAudioMixerGroup = mixerGroup;
         }
 
+        //create audio sources for each of the categories instead of for each, then have the clip be assigned to the audiosource
+
         foreach (SoundData s in sfxSounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -122,6 +124,9 @@ public class AudioManager : MonoBehaviour
         }
         s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));  //this is randomising the volume/pitch by allocating a random number from the volume variance number -/+ 2
         s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
+
+        //need to assign clip to audio source here 
+
 
         s.source.Play();
     }
