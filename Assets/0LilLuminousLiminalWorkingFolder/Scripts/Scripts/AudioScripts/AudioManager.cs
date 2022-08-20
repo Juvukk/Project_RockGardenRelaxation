@@ -62,6 +62,9 @@ public class AudioManager : MonoBehaviour
 
         //create audio sources for each of the categories instead of for each, then have the clip be assigned to the audiosource
 
+        //I think the only way to make the rocks play their audio will be either to make an additional array for the rocks and list each audio source as a different array element, OR make an
+        //event that the script on the individual rock (the prefab) subscribes to, to set it to play
+
         foreach (SoundData s in sfxSounds)
         {
             if (s.soundName == "WaterLoop")
@@ -86,6 +89,9 @@ public class AudioManager : MonoBehaviour
                 s.source.outputAudioMixerGroup = mixerGroup;
             }
         }
+
+    
+            GameObject.FindObjectOfType<FloatRock>();
 
         foreach (SoundData s in breathingSounds)
         {
