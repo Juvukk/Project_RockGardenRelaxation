@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         Thirteen, Fourteen, Fifthteen, Sixteen, Seventeen, Eightteen, Nineteen, Twenty, TwentyOne,
         TwentyTwo, TwentyThree, TwentyFour, TwentyFive, TwentySix, TwentySeven, TwentyEight, TwentyNine, Thirty,
         ThirtyOne, ThirtyTwo, ThirtyThree, ThirtyFour, ThirtyFive, ThirtySix, ThirtySeven, ThirtyEight, ThirtyNine,
-        Forty, FortyOne, FortyTwo, FortyThree, FortyFour, FortyFive, FortySix, FortySeven, FortyEight, FortyNine, Fifty, End
+        Forty, FortyOne, FortyTwo, FortyThree, FortyFour, FortyFive, FortySix, FortySeven, FortyEight, FortyNine, Fifty, FiftyOne, End
     }
 
     public GameState experienceSection;
@@ -362,6 +362,12 @@ public class GameManager : MonoBehaviour
 
                 stateHandler(((int)GameState.Fifty));
                 StartCoroutine(changeState(((int)GameState.Fifty)));
+                break;
+
+            case GameState.FiftyOne:
+
+                stateHandler(((int)GameState.FiftyOne));
+                StartCoroutine(changeState(((int)GameState.FiftyOne)));
                 break;
 
             case GameState.End:
