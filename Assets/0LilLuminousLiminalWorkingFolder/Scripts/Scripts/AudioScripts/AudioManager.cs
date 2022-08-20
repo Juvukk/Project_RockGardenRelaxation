@@ -50,26 +50,41 @@ public class AudioManager : MonoBehaviour
 
         foreach (SoundData s in voiceSounds)
         {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.loop = s.loop;
-            s.source.playOnAwake = s.playOnAwake;
-            s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
+                s.source = gameObject.AddComponent<AudioSource>();
+                s.source.clip = s.clip;
+                s.source.loop = s.loop;
+                s.source.playOnAwake = s.playOnAwake;
+                s.source.volume = s.volume;
+                s.source.pitch = s.pitch;
 
-            s.source.outputAudioMixerGroup = mixerGroup;
+                s.source.outputAudioMixerGroup = mixerGroup;
         }
 
         //create audio sources for each of the categories instead of for each, then have the clip be assigned to the audiosource
 
         foreach (SoundData s in sfxSounds)
         {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.loop = s.loop;
-            s.source.playOnAwake = s.playOnAwake;
+            if (s.soundName == "WaterLoop")
+            {
+                s.source.clip = s.clip;
+                s.source.loop = s.loop;
+                s.source.playOnAwake = s.playOnAwake;
+                s.source.volume = s.volume;
+                s.source.pitch = s.pitch;
 
-            s.source.outputAudioMixerGroup = mixerGroup;
+                s.source.outputAudioMixerGroup = mixerGroup;
+            }
+            else
+            {
+                s.source = gameObject.AddComponent<AudioSource>();
+                s.source.clip = s.clip;
+                s.source.loop = s.loop;
+                s.source.playOnAwake = s.playOnAwake;
+                s.source.volume = s.volume;
+                s.source.pitch = s.pitch;
+
+                s.source.outputAudioMixerGroup = mixerGroup;
+            }
         }
 
         foreach (SoundData s in breathingSounds)

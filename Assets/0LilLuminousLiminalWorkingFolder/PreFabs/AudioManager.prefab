@@ -47,7 +47,7 @@ MonoBehaviour:
   sfxSounds:
   - soundName: WaterLoop
     clip: {fileID: 8300000, guid: 8f93c896281e1f4489210aa17b152956, type: 3}
-    volume: 0.2
+    volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0

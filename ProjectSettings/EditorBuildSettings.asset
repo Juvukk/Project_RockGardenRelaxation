@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Examples/Scenes/Example.unity
     guid: 17d10320f148ee64488837d5f8008cfd
   - enabled: 1
-    path: Assets/0_Lil_Luminous_Liminal_Working_folder/Scenes/RockRelaxationMain.unity
+    path: Assets/0LilLuminousLiminalWorkingFolder/Scenes/RockRelaxationMain.unity
     guid: ba4448e754026a948ac2f82af2968feb
   m_configObjects: {}

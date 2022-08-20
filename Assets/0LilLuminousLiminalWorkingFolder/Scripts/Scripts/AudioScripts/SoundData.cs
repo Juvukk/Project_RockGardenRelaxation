@@ -25,7 +25,6 @@ public class SoundData
 
 	public bool playOnAwake = false;
 
-	[HideInInspector]
 	public AudioSource source;
 
 }
