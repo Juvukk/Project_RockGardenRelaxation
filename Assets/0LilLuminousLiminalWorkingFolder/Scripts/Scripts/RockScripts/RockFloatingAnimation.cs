@@ -6,6 +6,14 @@ public class RockFloatingAnimation : MonoBehaviour
 {
     public Animator rockAnimator;
 
+    public AudioManager audioManager;
+
+    public AudioManager.ArrayName breathingArrayName;
+
+    public AudioManager.ArrayName sfxArrayName;
+
+    private bool stopBreathingSound = false; //for some reason, after the animation halts, it continues to play the next inhale sound. this bool is a janky fix as I ran out of time
+
     private void OnEnable()
     {
         EventManager.voEvent += AnimateRocks;
@@ -29,10 +37,25 @@ public class RockFloatingAnimation : MonoBehaviour
                 break;
             case 49: //make this a number set in the inspector
                 rockAnimator.SetBool("NeedsToMove", false);
+                stopBreathingSound = true;
                 break;
         }         
 
     }
+
+    public void PlayBreathingSound(string clipName)
+    {
+        if (!stopBreathingSound) // notif statement, says "if stopBreathingSound isn't true, do this"
+        {
+            audioManager.Play(clipName, breathingArrayName);
+        }
+
+    }
+
+    //public void PlayLandingSound(string clipName)
+    //{
+    //    audioManager.Play(clipName, sfxArrayName);
+    //}
 
 
 }

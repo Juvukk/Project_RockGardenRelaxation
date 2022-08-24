@@ -11,6 +11,7 @@ public class PlaySoundAudioEvent : MonoBehaviour
 
     public string clipName;
 
+
     public void PlaySound()
     {
         AudioManager.instance.Play(clipName, arrayName); //the instance works only if there is an instance variable in the monobehaviour, it has something to do with this one not being a singleton

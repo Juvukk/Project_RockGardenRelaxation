@@ -6,7 +6,12 @@ using System.Collections;
 public class AudioManager : MonoBehaviour
 {
 
+    // there's a lot of comments in this script, I mainly kept them in for personal future reference, feel free to clean it up if it's selected for the platform
+
+
     public static AudioManager instance;
+
+    public AudioSource voiceAudioSource;
 
     public AudioMixerGroup mixerGroup;
 
@@ -18,7 +23,6 @@ public class AudioManager : MonoBehaviour
 
     public SoundData[] breathingSounds;
 
-   // public AudioSource voiceAudioSource;
 
     public enum ArrayName
     {
@@ -32,8 +36,8 @@ public class AudioManager : MonoBehaviour
 
     // [SerializeField] private AudioClip[] voiceLines;
 
-    private bool isGoingDown = false;
-    private int indexNumber = 0;
+   // private bool isGoingDown = false;
+   // private int indexNumber = 0;
 
 
     public void Awake()
@@ -48,10 +52,13 @@ public class AudioManager : MonoBehaviour
 			s.source.outputAudioMixerGroup = mixerGroup;
 		}
 
+
         foreach (SoundData s in voiceSounds)
         {
-                s.source = gameObject.AddComponent<AudioSource>();
+            if (s.soundName == "Voiceline1")
+            {
                 s.source.clip = s.clip;
+            }
                 s.source.loop = s.loop;
                 s.source.playOnAwake = s.playOnAwake;
                 s.source.volume = s.volume;
@@ -60,10 +67,6 @@ public class AudioManager : MonoBehaviour
                 s.source.outputAudioMixerGroup = mixerGroup;
         }
 
-        //create audio sources for each of the categories instead of for each, then have the clip be assigned to the audiosource
-
-        //I think the only way to make the rocks play their audio will be either to make an additional array for the rocks and list each audio source as a different array element, OR make an
-        //event that the script on the individual rock (the prefab) subscribes to, to set it to play
 
         foreach (SoundData s in sfxSounds)
         {
@@ -90,8 +93,9 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-    
-            GameObject.FindObjectOfType<FloatRock>();
+        // about the rock landing sounds: I couldn't figure out a way to attach them to each individual rock's landing point on the animation. Had I done things differently, like a separate
+        //animation for each rock, it would have been easier to work them in. For now, I have left the assets in, but they don't play anywhere
+
 
         foreach (SoundData s in breathingSounds)
         {
@@ -111,13 +115,6 @@ public class AudioManager : MonoBehaviour
     private void OnDisable()
     {
         EventManager.voEvent -= PlayVoiceLines;
-    }
-
-    public void Start()
-    {
-        Play("BackgroundMusic", ArrayName.music);
-        Play("WaterLoop", ArrayName.sfx);
-      //  PlayBreathingGuide();
     }
 
     public void Play(string sound, ArrayName arrayName)
@@ -143,17 +140,21 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
+
+        if (arrayName == ArrayName.voice) // this is just making sure to update the audio source to the correct audio clip so the right voiceline plays
+        {
+            s.source.clip = s.clip;
+        }
+
         s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));  //this is randomising the volume/pitch by allocating a random number from the volume variance number -/+ 2
         s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
-
-        //need to assign clip to audio source here 
 
 
         s.source.Play();
     }
 
 
-    public void PlayVoiceLines(int clipIndex)// this is called via the VOEvent in the eventManager, the ClipIndex is the section in the Gamemanager script.
+    public void PlayVoiceLines(int clipIndex)// this is called via the VOEvent in the eventManager, the ClipIndex is the "state number" section in the Gamemanager script.
     {
         string clipName;
         ArrayName arrayName = ArrayName.voice;
