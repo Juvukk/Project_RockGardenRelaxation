@@ -263,7 +263,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset
+      value: InnerPillarESE
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -303,7 +303,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -996,7 +996,7 @@ GameObject:
   - component: {fileID: 164417024}
   - component: {fileID: 164417023}
   m_Layer: 0
-  m_Name: Roof.027 (7)
+  m_Name: SouthWindowSpacer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1010,11 +1010,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164417021}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.409, y: 3.009, z: 5.024}
-  m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
+  m_LocalPosition: {x: -0.40899837, y: 3.008999, z: 5.024}
+  m_LocalScale: {x: 9.362279, y: 27.14542, z: 80.2757}
   m_Children: []
-  m_Father: {fileID: 1592625404}
-  m_RootOrder: 7
+  m_Father: {fileID: 1454979250}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &164417023
 MeshRenderer:
@@ -1060,7 +1060,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164417021}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!1001 &168789319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1161,7 +1161,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_Name
-      value: Shoji_Window_Large
+      value: NorthLargeShojiWindow2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -1201,7 +1201,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -1717,7 +1717,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (4)
+      value: InnerPillarNNW
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -1757,7 +1757,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -1935,7 +1935,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (10)
+      value: InnerPillarSSE
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -2211,7 +2211,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (8)
+      value: InnerPillarSW
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -2251,7 +2251,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -2308,7 +2308,7 @@ GameObject:
   - component: {fileID: 452027420}
   - component: {fileID: 452027419}
   m_Layer: 0
-  m_Name: Roof.027 (2)
+  m_Name: NorthWindowSpacer4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2326,7 +2326,7 @@ Transform:
   m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
   m_Children: []
   m_Father: {fileID: 1592625404}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &452027419
 MeshRenderer:
@@ -2372,7 +2372,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452027417}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!4 &465228379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6ce96431e3413364cbf5a93e4450d902,
@@ -2575,7 +2575,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_Name
-      value: Shoji_Window_Large (3)
+      value: SouthLargeShojiWindow1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -2615,7 +2615,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -2783,17 +2783,17 @@ Transform:
   m_LocalPosition: {x: -0.93408287, y: 2.3278353, z: 3.6472838}
   m_LocalScale: {x: 100, y: 99.99994, z: 99.99994}
   m_Children:
-  - {fileID: 98559372}
-  - {fileID: 2018192613}
-  - {fileID: 754870811}
-  - {fileID: 419461110}
-  - {fileID: 973862624}
   - {fileID: 1224107881}
-  - {fileID: 1340683798}
+  - {fileID: 419461110}
   - {fileID: 1641374826}
-  - {fileID: 658522472}
   - {fileID: 1811074629}
+  - {fileID: 658522472}
   - {fileID: 371483403}
+  - {fileID: 973862624}
+  - {fileID: 754870811}
+  - {fileID: 2018192613}
+  - {fileID: 98559372}
+  - {fileID: 1340683798}
   - {fileID: 379049848}
   m_Father: {fileID: 4265124500828265438}
   m_RootOrder: 3
@@ -2808,7 +2808,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (5)
+      value: InnerPillarNW
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -2848,7 +2848,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -3387,7 +3387,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (2)
+      value: InnerPillarNE
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -3427,7 +3427,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -3484,7 +3484,7 @@ GameObject:
   - component: {fileID: 778992680}
   - component: {fileID: 778992679}
   m_Layer: 0
-  m_Name: Roof.027 (5)
+  m_Name: SouthWindowSpacer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3498,11 +3498,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778992677}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 4.51, y: 3.009, z: 5.024}
-  m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
+  m_LocalPosition: {x: 4.5100064, y: 3.008999, z: 5.024}
+  m_LocalScale: {x: 9.362279, y: 27.14542, z: 80.2757}
   m_Children: []
-  m_Father: {fileID: 1592625404}
-  m_RootOrder: 5
+  m_Father: {fileID: 1454979250}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &778992679
 MeshRenderer:
@@ -3548,7 +3548,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778992677}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!1 &810164279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3652,7 +3652,7 @@ GameObject:
   - component: {fileID: 846512980}
   - component: {fileID: 846512979}
   m_Layer: 0
-  m_Name: Roof.027 (3)
+  m_Name: NorthWindowSpacer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3670,7 +3670,7 @@ Transform:
   m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
   m_Children: []
   m_Father: {fileID: 1592625404}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &846512979
 MeshRenderer:
@@ -3716,7 +3716,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846512977}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!1 &858264979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,7 +4108,7 @@ GameObject:
   - component: {fileID: 960764946}
   - component: {fileID: 960764945}
   m_Layer: 0
-  m_Name: Roof.027 (4)
+  m_Name: NorthWindowSpacer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4126,7 +4126,7 @@ Transform:
   m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
   m_Children: []
   m_Father: {fileID: 1592625404}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &960764945
 MeshRenderer:
@@ -4172,7 +4172,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960764943}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!1001 &961609736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4446,7 +4446,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (3)
+      value: InnerPillarNNE
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -4486,7 +4486,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -4541,7 +4541,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_Name
-      value: Shoji_Window_Large (1)
+      value: NorthLargeShojiWindow1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -4581,7 +4581,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -5499,10 +5499,10 @@ Transform:
   m_LocalPosition: {x: 2.9290001, y: 1.695, z: -4.922}
   m_LocalScale: {x: 84.31136, y: 84.3113, z: 58.11663}
   m_Children:
-  - {fileID: 184262481}
   - {fileID: 976975114}
-  - {fileID: 1920842375}
+  - {fileID: 184262481}
   - {fileID: 631539439}
+  - {fileID: 1920842375}
   m_Father: {fileID: 4265124500828265438}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5524,7 +5524,7 @@ GameObject:
   - component: {fileID: 1194541730}
   - component: {fileID: 1194541729}
   m_Layer: 0
-  m_Name: Roof.027 (10)
+  m_Name: NorthWindowSpacer5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5542,7 +5542,7 @@ Transform:
   m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
   m_Children: []
   m_Father: {fileID: 1592625404}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1194541729
 MeshRenderer:
@@ -5588,7 +5588,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194541727}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!1 &1205183557
 GameObject:
   m_ObjectHideFlags: 0
@@ -5729,7 +5729,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (9)
+      value: InnerPillarSSW
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -5769,7 +5769,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -6096,7 +6096,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (11)
+      value: InnerPillarSE
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -6136,7 +6136,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -6461,7 +6461,7 @@ GameObject:
   - component: {fileID: 1373403035}
   - component: {fileID: 1373403034}
   m_Layer: 0
-  m_Name: Roof.027 (1)
+  m_Name: NorthWindowSpacer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6479,7 +6479,7 @@ Transform:
   m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
   m_Children: []
   m_Father: {fileID: 1592625404}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1373403034
 MeshRenderer:
@@ -6525,7 +6525,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373403032}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!4 &1373609277 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6ce96431e3413364cbf5a93e4450d902,
@@ -6676,6 +6676,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aab52faec0192f40a2d25a1d58aa99e, type: 3}
+--- !u!1 &1454979249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454979250}
+  m_Layer: 0
+  m_Name: SouthUpperWindowSpacers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454979250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454979249}
+  m_LocalRotation: {x: -0, y: -0.7072302, z: -0.7069834, w: 0}
+  m_LocalPosition: {x: -0.035989963, y: -0.04964199, z: -0.034422647}
+  m_LocalScale: {x: 0.010000008, y: 0.009999998, z: 0.010000007}
+  m_Children:
+  - {fileID: 778992678}
+  - {fileID: 1652772405}
+  - {fileID: 164417022}
+  - {fileID: 1923455066}
+  - {fileID: 2071752672}
+  m_Father: {fileID: 2085325535}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1456575766
 GameObject:
   m_ObjectHideFlags: 0
@@ -7120,7 +7155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1592625404}
   m_Layer: 0
-  m_Name: WindowsShadowPlane
+  m_Name: NorthUpperWindowSpacers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7137,18 +7172,13 @@ Transform:
   m_LocalPosition: {x: -0.035989944, y: -0.04964199, z: -0.03442265}
   m_LocalScale: {x: 0.009999988, y: 0.009999995, z: 0.009999995}
   m_Children:
+  - {fileID: 960764944}
+  - {fileID: 846512978}
   - {fileID: 1373403033}
   - {fileID: 452027418}
   - {fileID: 1194541728}
-  - {fileID: 846512978}
-  - {fileID: 960764944}
-  - {fileID: 778992678}
-  - {fileID: 1652772405}
-  - {fileID: 164417022}
-  - {fileID: 1923455066}
-  - {fileID: 2071752672}
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1597596899
 PrefabInstance:
@@ -7254,7 +7284,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (7)
+      value: InnerPillarWSW
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -7294,7 +7324,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -7351,7 +7381,7 @@ GameObject:
   - component: {fileID: 1652772407}
   - component: {fileID: 1652772406}
   m_Layer: 0
-  m_Name: Roof.027 (6)
+  m_Name: SouthWindowSpacer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7365,11 +7395,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652772404}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.0379999, y: 3.009, z: 5.024}
-  m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
+  m_LocalPosition: {x: 2.0380027, y: 3.008999, z: 5.024}
+  m_LocalScale: {x: 9.362279, y: 27.14542, z: 80.2757}
   m_Children: []
-  m_Father: {fileID: 1592625404}
-  m_RootOrder: 6
+  m_Father: {fileID: 1454979250}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &1652772406
 MeshRenderer:
@@ -7415,7 +7445,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652772404}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!4 &1664549911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: fee142fb60f08c943ae61797d4b8d0e0,
@@ -7869,7 +7899,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (6)
+      value: InnerPillarWNW
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -7909,7 +7939,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -8323,7 +8353,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_Name
-      value: Shoji_Window_Large (2)
+      value: SouthLargeShojiWindow2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -8363,7 +8393,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -8425,7 +8455,7 @@ GameObject:
   - component: {fileID: 1923455068}
   - component: {fileID: 1923455067}
   m_Layer: 0
-  m_Name: Roof.027 (8)
+  m_Name: SouthWindowSpacer4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8439,11 +8469,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923455065}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -2.8530002, y: 3.009, z: 5.024}
-  m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
+  m_LocalPosition: {x: -2.8530014, y: 3.008999, z: 5.024}
+  m_LocalScale: {x: 9.362279, y: 27.14542, z: 80.2757}
   m_Children: []
-  m_Father: {fileID: 1592625404}
-  m_RootOrder: 8
+  m_Father: {fileID: 1454979250}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &1923455067
 MeshRenderer:
@@ -8489,7 +8519,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923455065}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!1 &1983855237
 GameObject:
   m_ObjectHideFlags: 0
@@ -8945,7 +8975,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_Name
-      value: Pillar_Asset (1)
+      value: InnerPillarENE
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -8985,7 +9015,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -9234,7 +9264,7 @@ GameObject:
   - component: {fileID: 2071752674}
   - component: {fileID: 2071752673}
   m_Layer: 0
-  m_Name: Roof.027 (9)
+  m_Name: SouthWindowSpacer5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9248,11 +9278,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071752671}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -5.312, y: 3.009, z: 5.024}
-  m_LocalScale: {x: 9.362268, y: 27.145414, z: 80.27569}
+  m_LocalPosition: {x: -5.312004, y: 3.008999, z: 5.024}
+  m_LocalScale: {x: 9.362279, y: 27.14542, z: 80.2757}
   m_Children: []
-  m_Father: {fileID: 1592625404}
-  m_RootOrder: 9
+  m_Father: {fileID: 1454979250}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &2071752673
 MeshRenderer:
@@ -9298,7 +9328,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071752671}
-  m_Mesh: {fileID: -2045705842353463389, guid: 73e23097865aa1842943325144fa3442, type: 3}
+  m_Mesh: {fileID: -2045705842353463389, guid: d8788e8c31bddd745a033700ea4c111e, type: 3}
 --- !u!1 &2079529091
 GameObject:
   m_ObjectHideFlags: 0
@@ -9417,6 +9447,7 @@ Transform:
   m_LocalPosition: {x: -3.3009999, y: 3.444, z: 4.936}
   m_LocalScale: {x: 100.00018, y: 100.00006, z: 100.00006}
   m_Children:
+  - {fileID: 1454979250}
   - {fileID: 1592625404}
   - {fileID: 5006512736224793303}
   - {fileID: 5006512736102562727}
@@ -11886,7 +11917,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -89.95, y: 180, z: 0}
 --- !u!4 &5006512736101501441
 Transform:
@@ -11900,7 +11931,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -89.95, y: 0, z: 0}
 --- !u!4 &5006512736102562727
 Transform:
@@ -11914,7 +11945,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
 --- !u!4 &5006512736141909639
 Transform:
@@ -11928,7 +11959,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -89.95, y: 0, z: 0}
 --- !u!4 &5006512736173037285
 Transform:
@@ -11942,7 +11973,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -89.95, y: 0, z: 0}
 --- !u!4 &5006512736224793303
 Transform:
@@ -11956,7 +11987,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
 --- !u!4 &5006512736560390396
 Transform:
@@ -11970,7 +12001,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -89.95, y: 180, z: 0}
 --- !u!4 &5006512736835843138
 Transform:
@@ -11984,7 +12015,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085325535}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -89.95, y: 0, z: 0}
 --- !u!4 &5720713888741257673
 Transform:
@@ -12592,7 +12623,7 @@ GameObject:
   - component: {fileID: 4044710142999632586}
   - component: {fileID: 7718390322193131059}
   m_Layer: 0
-  m_Name: Shoji_Window (6)
+  m_Name: SouthUpperShojiWindow4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12610,7 +12641,7 @@ GameObject:
   - component: {fileID: 4044710142722084468}
   - component: {fileID: 7718390321932235405}
   m_Layer: 0
-  m_Name: Shoji_Window (9)
+  m_Name: SouthUpperShojiWindow3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12628,7 +12659,7 @@ GameObject:
   - component: {fileID: 4044710142381621649}
   - component: {fileID: 7718390321735302504}
   m_Layer: 0
-  m_Name: Shoji_Window (4)
+  m_Name: SouthUpperShojiWindow2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12646,7 +12677,7 @@ GameObject:
   - component: {fileID: 4044710142380585015}
   - component: {fileID: 7718390321734241486}
   m_Layer: 0
-  m_Name: Shoji_Window (10)
+  m_Name: SouthUpperShojiWindow4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12664,7 +12695,7 @@ GameObject:
   - component: {fileID: 4044710141993085153}
   - component: {fileID: 7718390321589064728}
   m_Layer: 0
-  m_Name: Shoji_Window
+  m_Name: SouthUpperShojiWindow1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12682,7 +12713,7 @@ GameObject:
   - component: {fileID: 4044710142076202195}
   - component: {fileID: 7718390321537929258}
   m_Layer: 0
-  m_Name: Shoji_Window (8)
+  m_Name: SouthUpperShojiWindow2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12700,7 +12731,7 @@ GameObject:
   - component: {fileID: 4044710142111524017}
   - component: {fileID: 7718390321573386312}
   m_Layer: 0
-  m_Name: Shoji_Window (7)
+  m_Name: SouthUpperShojiWindow1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12718,7 +12749,7 @@ GameObject:
   - component: {fileID: 4044710141152830520}
   - component: {fileID: 7718390322494855361}
   m_Layer: 0
-  m_Name: Shoji_Window (5)
+  m_Name: SouthUpperShojiWindow3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
