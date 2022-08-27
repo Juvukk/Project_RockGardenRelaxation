@@ -67,17 +67,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5178661895559278292, guid: 1422834087c945143843fe6f938a9ec0,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 5503844029681744481, guid: c659d4dd9d4671d4c87f0e47ff07ac02,
-        type: 3}
     - target: {fileID: -1504981713932161579, guid: 1422834087c945143843fe6f938a9ec0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -3846018093981099296, guid: c659d4dd9d4671d4c87f0e47ff07ac02,
+      objectReference: {fileID: 2100000, guid: 0d68aabf40012384e9d347a9bd7accb1, type: 2}
+    - target: {fileID: -5178661895559278292, guid: 1422834087c945143843fe6f938a9ec0,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -6829510318115963752, guid: 1422834087c945143843fe6f938a9ec0,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1422834087c945143843fe6f938a9ec0, type: 3}
