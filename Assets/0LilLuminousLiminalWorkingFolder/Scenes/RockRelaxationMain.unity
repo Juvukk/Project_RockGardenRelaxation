@@ -265,6 +265,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerPillarESE
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -891,6 +896,66 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -13.779
       objectReference: {fileID: 0}
+    - target: {fileID: 5117890953676234110, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980079965261650032, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029452109684244975, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033263745815941237, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654912824706328554, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713844090230284736, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191845217219214929, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573833934417274492, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481034176593188780, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2690380606462172431, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431190651246427418, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862018213994477249, guid: 79071ba5f9967484a8407a0ad8897afb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79071ba5f9967484a8407a0ad8897afb, type: 3}
 --- !u!1 &164070189
@@ -1163,6 +1228,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NorthLargeShojiWindow2
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1262,6 +1332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MossPadSE
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fee142fb60f08c943ae61797d4b8d0e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fee142fb60f08c943ae61797d4b8d0e0,
         type: 3}
@@ -1499,7 +1574,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 2.198924, y: 0.73758125}
+  m_AreaSize: {x: 2.198924, y: 1.2068677}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
@@ -1515,7 +1590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245849188}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.168, y: 4.86, z: -0.13}
+  m_LocalPosition: {x: -5.067, y: 4.86, z: -0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1205183558}
@@ -1718,6 +1793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerPillarNNW
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -1936,6 +2016,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerPillarSSE
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -2212,6 +2297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerPillarSW
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -2577,6 +2667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SouthLargeShojiWindow1
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2809,6 +2904,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerPillarNW
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -3091,7 +3191,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &708113467
 BoxCollider:
@@ -3388,6 +3488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerPillarNE
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -3824,7 +3929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &914171904
 Light:
   m_ObjectHideFlags: 0
@@ -3893,7 +3998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914171903}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.058, y: 2.127, z: 0.255}
+  m_LocalPosition: {x: 1.188, y: 2.127, z: -1.088}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4226282195027429933}
@@ -4185,6 +4290,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallScrollNW
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6ce96431e3413364cbf5a93e4450d902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6ce96431e3413364cbf5a93e4450d902,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4273,6 +4383,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MossPadNE
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fee142fb60f08c943ae61797d4b8d0e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fee142fb60f08c943ae61797d4b8d0e0,
         type: 3}
@@ -4448,6 +4563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerPillarNNE
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4542,6 +4662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NorthLargeShojiWindow1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -4994,6 +5119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallScrollNE
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6ce96431e3413364cbf5a93e4450d902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6ce96431e3413364cbf5a93e4450d902,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5389,6 +5519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sitting_Rock_V2
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1422834087c945143843fe6f938a9ec0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1422834087c945143843fe6f938a9ec0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5730,6 +5865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerPillarSSW
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -6098,6 +6238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerPillarSE
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6283,6 +6428,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rake
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b5ef997175ba53541bd88d2877a62255,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b5ef997175ba53541bd88d2877a62255,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6371,6 +6521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToriGateSouthScroll
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6ce96431e3413364cbf5a93e4450d902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6ce96431e3413364cbf5a93e4450d902,
         type: 3}
@@ -7197,6 +7352,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e4bd13981d7412541865f63ea9fa4a29,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e4bd13981d7412541865f63ea9fa4a29,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7285,6 +7445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerPillarWSW
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
@@ -7598,7 +7763,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 2.198924, y: 0.73758125}
+  m_AreaSize: {x: 2.198924, y: 1.171463}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
@@ -7614,7 +7779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755003182}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.252, y: 4.88, z: -0.13}
+  m_LocalPosition: {x: 0.9, y: 4.88, z: -0.051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1205183558}
@@ -7637,6 +7802,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MossPadSW
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fee142fb60f08c943ae61797d4b8d0e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fee142fb60f08c943ae61797d4b8d0e0,
         type: 3}
@@ -7901,6 +8071,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerPillarWNW
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9094118cb794b234ca7b36e6cc83d25c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9094118cb794b234ca7b36e6cc83d25c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8087,6 +8262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MossPadNW
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fee142fb60f08c943ae61797d4b8d0e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fee142fb60f08c943ae61797d4b8d0e0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8175,6 +8355,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToriGateNorth
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e4bd13981d7412541865f63ea9fa4a29,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e4bd13981d7412541865f63ea9fa4a29,
         type: 3}
@@ -8354,6 +8539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SouthLargeShojiWindow2
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
@@ -8807,6 +8997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToriGateNorthScroll
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6ce96431e3413364cbf5a93e4450d902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6ce96431e3413364cbf5a93e4450d902,
         type: 3}
