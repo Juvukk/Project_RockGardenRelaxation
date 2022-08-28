@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 9bde7338ed7c8a141b7a2e71c75febbe
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 25
   internalIDToNameTable:
   - first:
       1: 100000
@@ -432,9 +432,119 @@ ModelImporter:
   - first:
       95: 9500000
     second: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cross_bambooMat
+    second: {fileID: 2100000, guid: 9c7d16847f3e7394eb0daa4ab5123762, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cross_coverMat
+    second: {fileID: 2100000, guid: 49825aa73ef752843afa2109bc8aaaba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cross_potMat
+    second: {fileID: 2100000, guid: 77563bfb770de824d98849f9286adc7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cross_pot_colliderMat
+    second: {fileID: 2100000, guid: 86bfbe676e201044092e20ff41388212, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cyl_Sph_Sqr_BambooMat
+    second: {fileID: 2100000, guid: 1168cb1a22266f74cabbcdd78387ae8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder_coverMat
+    second: {fileID: 2100000, guid: 838606c089f70594dbeae538e0d0c167, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder_potMat
+    second: {fileID: 2100000, guid: a5c84b4ba3d760943a77a19110bd8e2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder_pot_colliderMat
+    second: {fileID: 2100000, guid: 3d3ee99cc24ba5c4b9fd3cbaa7232038, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PalmMat
+    second: {fileID: 2100000, guid: 7c0fa2e14d9cb3c4ab6db024c7cdb9a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PineMat
+    second: {fileID: 2100000, guid: 2db39ef108aa77649b3f8cb0d1f741a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShrubMat
+    second: {fileID: 2100000, guid: 91add4c32926ddd449a854b0e42d4103, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sphere_pot_colliderMat
+    second: {fileID: 2100000, guid: 9614661494e68034283e59d77afa933a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spheres_coverMat
+    second: {fileID: 2100000, guid: 1a3d72c2ee5177f4ca1fcc8aa42b6ead, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spheres_potMat
+    second: {fileID: 2100000, guid: 7818ee51265d5b046bb54e29a10a367d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SpikesMat
+    second: {fileID: 2100000, guid: c582e09a2e4d8c04daf7eaab72dac74c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Square_coverMat
+    second: {fileID: 2100000, guid: 6f602398641c5a048b31ee68d8095eb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Square_potMat
+    second: {fileID: 2100000, guid: 93042cba2e025794bbe719cae0cfe704, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Square_pot_colliderMat
+    second: {fileID: 2100000, guid: 692415169d16f0b42bc81dde31e34303, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Triangle_bambooMat
+    second: {fileID: 2100000, guid: 54d5f26d9d5e93e4580edc7760480d7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Triangle_coverMat
+    second: {fileID: 2100000, guid: e08c1b12ce47f0f45adfcac45c5b76f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Triangle_potMat
+    second: {fileID: 2100000, guid: 89d76fe5c93041646841085becb0a45b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Triangle_pot_colliderMat
+    second: {fileID: 2100000, guid: 4a1a8064a660969428301dbf3fb7cf34, type: 2}
   materials:
-    materialImportMode: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -467,18 +577,15 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
-    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -488,9 +595,6 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 0
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
   tangentSpace:
@@ -503,6 +607,7 @@ ModelImporter:
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 1
+  copyAvatar: 0
   humanDescription:
     serializedVersion: 3
     human: []
@@ -520,11 +625,8 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
-  avatarSetup: 0
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

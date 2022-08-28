@@ -1227,16 +1227,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134021758}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+    - target: {fileID: -5178661895559278292, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
-      propertyPath: m_Name
-      value: NorthLargeShojiWindow2
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -1045111890271186868, guid: b556200cf118d424bb3fcf6d6f917e0b,
         type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1317,12 +1313,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fa33c53d12654d6439174eb563e39119, type: 2}
-    - target: {fileID: -5178661895559278292, guid: 8e0e92511a60db0418fe71a084f02896,
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -1045111890271186868, guid: b556200cf118d424bb3fcf6d6f917e0b,
+      propertyPath: m_Name
+      value: NorthLargeShojiWindow2
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0e92511a60db0418fe71a084f02896, type: 3}
 --- !u!4 &184262481
@@ -2815,16 +2815,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134021758}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+    - target: {fileID: -5178661895559278292, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
-      propertyPath: m_Name
-      value: SouthLargeShojiWindow1
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -1045111890271186868, guid: b556200cf118d424bb3fcf6d6f917e0b,
         type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2905,12 +2901,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fa33c53d12654d6439174eb563e39119, type: 2}
-    - target: {fileID: -5178661895559278292, guid: 8e0e92511a60db0418fe71a084f02896,
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -1045111890271186868, guid: b556200cf118d424bb3fcf6d6f917e0b,
+      propertyPath: m_Name
+      value: SouthLargeShojiWindow1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0e92511a60db0418fe71a084f02896, type: 3}
 --- !u!4 &631539439
@@ -4735,16 +4735,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134021758}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+    - target: {fileID: -5178661895559278292, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
-      propertyPath: m_Name
-      value: NorthLargeShojiWindow1
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -1045111890271186868, guid: b556200cf118d424bb3fcf6d6f917e0b,
         type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4825,12 +4821,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fa33c53d12654d6439174eb563e39119, type: 2}
-    - target: {fileID: -5178661895559278292, guid: 8e0e92511a60db0418fe71a084f02896,
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -1045111890271186868, guid: b556200cf118d424bb3fcf6d6f917e0b,
+      propertyPath: m_Name
+      value: NorthLargeShojiWindow1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0e92511a60db0418fe71a084f02896, type: 3}
 --- !u!4 &976975114
@@ -6017,7 +6017,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: -1993726906180131585, guid: 63eeba70d7f8bdf48894c539f8cfa4f9,
+      objectReference: {fileID: -1993726906180131585, guid: d0f712a811ae023498acac4a4c0e381c,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d84f0b7739fe8345a41b33fe49484ff, type: 3}
@@ -7197,7 +7197,7 @@ Light:
   m_BounceIntensity: 6.28
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: NaN, z: 7.52e-43, w: 1.8189358e-25}
+  m_BoundingSphereOverride: {x: 2.1894817, y: 3.6661646e+18, z: -2.535282e-23, w: 0.000000038466258}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -8769,16 +8769,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134021758}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+    - target: {fileID: -5178661895559278292, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
-      propertyPath: m_Name
-      value: SouthLargeShojiWindow2
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -1045111890271186868, guid: b556200cf118d424bb3fcf6d6f917e0b,
         type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8859,12 +8855,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fa33c53d12654d6439174eb563e39119, type: 2}
-    - target: {fileID: -5178661895559278292, guid: 8e0e92511a60db0418fe71a084f02896,
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -1045111890271186868, guid: b556200cf118d424bb3fcf6d6f917e0b,
+      propertyPath: m_Name
+      value: SouthLargeShojiWindow2
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8e0e92511a60db0418fe71a084f02896,
         type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0e92511a60db0418fe71a084f02896, type: 3}
 --- !u!4 &1920842375
@@ -8984,7 +8984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951438991}
   m_LocalRotation: {x: -0.84442747, y: -0, z: -0, w: -0.53567004}
-  m_LocalPosition: {x: -2.024, y: 5.2000513, z: 2.0040016}
+  m_LocalPosition: {x: -2.024, y: 6.775, z: 2.004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1205183558}
@@ -9012,8 +9012,8 @@ Light:
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NormalBias: 0
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -9046,7 +9046,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0.203125, y: -5, z: 14, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 3.59e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 6.6
