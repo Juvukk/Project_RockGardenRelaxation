@@ -3,7 +3,12 @@ guid: 6ce96431e3413364cbf5a93e4450d902
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScrollPaper
+    second: {fileID: 2100000, guid: eb1b4dc76496c30499043e265b73b94c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
